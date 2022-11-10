@@ -1,0 +1,2604 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"103 mcc_generated_files/mtouch/mtouch_slider.c
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 103: static mtouch_slider_t mtouch_slider[1u] = {
+[c E2914 0 .. ]
+[n E2914 mtouch_slider_names Slider1  ]
+[c E2911 0 1 .. ]
+[n E2911 mtouch_slider_type MTOUCH_TYPE_SLIDER MTOUCH_TYPE_WHEEL  ]
+[c E2738 0 1 2 3 4 5 6 7 8 9 10 .. ]
+[n E2738 mtouch_sensor_names Sensor_AN12 Sensor_AN10 Sensor_AN8 Sensor_AN9 Sensor_AN11 Sensor_AN13 Sensor_AN4 Sensor_AN3 Sensor_AN2 Sensor_AN1 Sensor_AN0  ]
+"83
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 83: {
+[s S358 `CE2914 1 `CE2911 1 `CE2738 1 `Cuc 1 `Cuc 1 `Cuc 1 `us 1 `uc 1 `uc 1 `us 1 `us 1 `us 1 `uc 1 ]
+[n S358 . slider type startSegment segmentCount resolDeadband positionHysteresis contactThreshold rightHysteresis leftHysteresis rawPosition sliderPosition contactSize sliderStatus ]
+"103
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 103: static mtouch_slider_t mtouch_slider[1u] = {
+[c E2801 0 1 2 3 4 .. ]
+[n E2801 mtouch_button_names Slider1_Seg0 Slider1_Seg1 Slider1_Seg2 Slider1_Seg3 Slider1_Seg4  ]
+[v F3052 `(v ~T0 @X0 0 tf1`E2914 ]
+"137
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 137: static void Slider_DefaultCallback (enum mtouch_slider_names slider);
+[v _Slider_DefaultCallback `(v ~T0 @X0 0 sf1`E2914 ]
+[v F3057 `(v ~T0 @X0 0 tf1`E2914 ]
+[v F3062 `(v ~T0 @X0 0 tf1`E2914 ]
+"111 mcc_generated_files/mtouch/mtouch_button.h
+[; ;mcc_generated_files/mtouch/mtouch_button.h: 111:     mtouch_button_deviation_t MTOUCH_Button_Deviation_Get (enum mtouch_button_names button);
+[v _MTOUCH_Button_Deviation_Get `(c ~T0 @X0 0 ef1`E2801 ]
+"666 mcc_generated_files/mtouch/mtouch_slider.c
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 666:     if ((slider->sliderStatus & (uint8_t)((uint8_t)3u<<0u)) != MTOUCH_SLIDER_STATE_pressed)
+[c E2990 0 1 2 .. ]
+[n E2990 mtouch_slider_state MTOUCH_SLIDER_STATE_initializing MTOUCH_SLIDER_STATE_notPressed MTOUCH_SLIDER_STATE_pressed  ]
+"121 mcc_generated_files/mtouch/mtouch_button.h
+[; ;mcc_generated_files/mtouch/mtouch_button.h: 121:     _Bool MTOUCH_Button_isPressed (enum mtouch_button_names button);
+[v _MTOUCH_Button_isPressed `(a ~T0 @X0 0 ef1`E2801 ]
+"128
+[; ;mcc_generated_files/mtouch/mtouch_button.h: 128:     void MTOUCH_Button_Reburst_Request(enum mtouch_button_names button);
+[v _MTOUCH_Button_Reburst_Request `(v ~T0 @X0 0 ef1`E2801 ]
+[v F3166 `(v ~T0 @X0 0 tf1`E2914 ]
+[v F3169 `(v ~T0 @X0 0 tf1`E2914 ]
+[v F3174 `(v ~T0 @X0 0 tf1`E2914 ]
+[v F3177 `(v ~T0 @X0 0 tf1`E2914 ]
+[v F3182 `(v ~T0 @X0 0 tf1`E2914 ]
+[v F3185 `(v ~T0 @X0 0 tf1`E2914 ]
+"55 /Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 55: __asm("INDF0 equ 00h");
+[; <" INDF0 equ 00h ;# ">
+"75
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 75: __asm("INDF1 equ 01h");
+[; <" INDF1 equ 01h ;# ">
+"95
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 95: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"115
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 115: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"178
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 178: __asm("FSR0L equ 04h");
+[; <" FSR0L equ 04h ;# ">
+"198
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 198: __asm("FSR0H equ 05h");
+[; <" FSR0H equ 05h ;# ">
+"222
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 222: __asm("FSR1L equ 06h");
+[; <" FSR1L equ 06h ;# ">
+"242
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 242: __asm("FSR1H equ 07h");
+[; <" FSR1H equ 07h ;# ">
+"262
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 262: __asm("BSR equ 08h");
+[; <" BSR equ 08h ;# ">
+"314
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 314: __asm("WREG equ 09h");
+[; <" WREG equ 09h ;# ">
+"334
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 334: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"354
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 354: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"432
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 432: __asm("PORTA equ 0Ch");
+[; <" PORTA equ 0Ch ;# ">
+"494
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 494: __asm("PORTB equ 0Dh");
+[; <" PORTB equ 0Dh ;# ">
+"556
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 556: __asm("PORTC equ 0Eh");
+[; <" PORTC equ 0Eh ;# ">
+"618
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 618: __asm("PORTE equ 010h");
+[; <" PORTE equ 010h ;# ">
+"639
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 639: __asm("PIR1 equ 011h");
+[; <" PIR1 equ 011h ;# ">
+"701
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 701: __asm("PIR2 equ 012h");
+[; <" PIR2 equ 012h ;# ">
+"758
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 758: __asm("PIR3 equ 013h");
+[; <" PIR3 equ 013h ;# ">
+"804
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 804: __asm("TMR0 equ 015h");
+[; <" TMR0 equ 015h ;# ">
+"824
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 824: __asm("TMR1 equ 016h");
+[; <" TMR1 equ 016h ;# ">
+"831
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 831: __asm("TMR1L equ 016h");
+[; <" TMR1L equ 016h ;# ">
+"851
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 851: __asm("TMR1H equ 017h");
+[; <" TMR1H equ 017h ;# ">
+"871
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 871: __asm("T1CON equ 018h");
+[; <" T1CON equ 018h ;# ">
+"943
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 943: __asm("T1GCON equ 019h");
+[; <" T1GCON equ 019h ;# ">
+"1020
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 1020: __asm("TMR2 equ 01Ah");
+[; <" TMR2 equ 01Ah ;# ">
+"1040
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 1040: __asm("PR2 equ 01Bh");
+[; <" PR2 equ 01Bh ;# ">
+"1060
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 1060: __asm("T2CON equ 01Ch");
+[; <" T2CON equ 01Ch ;# ">
+"1131
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 1131: __asm("CPSCON0 equ 01Eh");
+[; <" CPSCON0 equ 01Eh ;# ">
+"1191
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 1191: __asm("CPSCON1 equ 01Fh");
+[; <" CPSCON1 equ 01Fh ;# ">
+"1231
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 1231: __asm("TRISA equ 08Ch");
+[; <" TRISA equ 08Ch ;# ">
+"1293
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 1293: __asm("TRISB equ 08Dh");
+[; <" TRISB equ 08Dh ;# ">
+"1355
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 1355: __asm("TRISC equ 08Eh");
+[; <" TRISC equ 08Eh ;# ">
+"1417
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 1417: __asm("TRISE equ 090h");
+[; <" TRISE equ 090h ;# ">
+"1438
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 1438: __asm("PIE1 equ 091h");
+[; <" PIE1 equ 091h ;# ">
+"1500
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 1500: __asm("PIE2 equ 092h");
+[; <" PIE2 equ 092h ;# ">
+"1557
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 1557: __asm("PIE3 equ 093h");
+[; <" PIE3 equ 093h ;# ">
+"1603
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 1603: __asm("OPTION_REG equ 095h");
+[; <" OPTION_REG equ 095h ;# ">
+"1686
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 1686: __asm("PCON equ 096h");
+[; <" PCON equ 096h ;# ">
+"1737
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 1737: __asm("WDTCON equ 097h");
+[; <" WDTCON equ 097h ;# ">
+"1796
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 1796: __asm("OSCTUNE equ 098h");
+[; <" OSCTUNE equ 098h ;# ">
+"1854
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 1854: __asm("OSCCON equ 099h");
+[; <" OSCCON equ 099h ;# ">
+"1926
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 1926: __asm("OSCSTAT equ 09Ah");
+[; <" OSCSTAT equ 09Ah ;# ">
+"1988
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 1988: __asm("ADRES equ 09Bh");
+[; <" ADRES equ 09Bh ;# ">
+"1995
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 1995: __asm("ADRESL equ 09Bh");
+[; <" ADRESL equ 09Bh ;# ">
+"2015
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 2015: __asm("ADRESH equ 09Ch");
+[; <" ADRESH equ 09Ch ;# ">
+"2035
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 2035: __asm("ADCON0 equ 09Dh");
+[; <" ADCON0 equ 09Dh ;# ">
+"2124
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 2124: __asm("ADCON1 equ 09Eh");
+[; <" ADCON1 equ 09Eh ;# ">
+"2196
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 2196: __asm("LATA equ 010Ch");
+[; <" LATA equ 010Ch ;# ">
+"2258
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 2258: __asm("LATB equ 010Dh");
+[; <" LATB equ 010Dh ;# ">
+"2320
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 2320: __asm("LATC equ 010Eh");
+[; <" LATC equ 010Eh ;# ">
+"2382
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 2382: __asm("LATE equ 0110h");
+[; <" LATE equ 0110h ;# ">
+"2403
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 2403: __asm("CM1CON0 equ 0111h");
+[; <" CM1CON0 equ 0111h ;# ">
+"2460
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 2460: __asm("CM1CON1 equ 0112h");
+[; <" CM1CON1 equ 0112h ;# ">
+"2526
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 2526: __asm("CM2CON0 equ 0113h");
+[; <" CM2CON0 equ 0113h ;# ">
+"2583
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 2583: __asm("CM2CON1 equ 0114h");
+[; <" CM2CON1 equ 0114h ;# ">
+"2649
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 2649: __asm("CMOUT equ 0115h");
+[; <" CMOUT equ 0115h ;# ">
+"2675
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 2675: __asm("BORCON equ 0116h");
+[; <" BORCON equ 0116h ;# ">
+"2702
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 2702: __asm("FVRCON equ 0117h");
+[; <" FVRCON equ 0117h ;# ">
+"2778
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 2778: __asm("DACCON0 equ 0118h");
+[; <" DACCON0 equ 0118h ;# ">
+"2839
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 2839: __asm("DACCON1 equ 0119h");
+[; <" DACCON1 equ 0119h ;# ">
+"2891
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 2891: __asm("SRCON0 equ 011Ah");
+[; <" SRCON0 equ 011Ah ;# ">
+"2962
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 2962: __asm("SRCON1 equ 011Bh");
+[; <" SRCON1 equ 011Bh ;# ">
+"3024
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3024: __asm("APFCON equ 011Dh");
+[; <" APFCON equ 011Dh ;# ">
+"3080
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3080: __asm("ANSELA equ 018Ch");
+[; <" ANSELA equ 018Ch ;# ">
+"3138
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3138: __asm("ANSELB equ 018Dh");
+[; <" ANSELB equ 018Dh ;# ">
+"3196
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3196: __asm("EEADR equ 0191h");
+[; <" EEADR equ 0191h ;# ">
+"3203
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3203: __asm("EEADRL equ 0191h");
+[; <" EEADRL equ 0191h ;# ">
+"3223
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3223: __asm("EEADRH equ 0192h");
+[; <" EEADRH equ 0192h ;# ">
+"3243
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3243: __asm("EEDAT equ 0193h");
+[; <" EEDAT equ 0193h ;# ">
+"3250
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3250: __asm("EEDATL equ 0193h");
+[; <" EEDATL equ 0193h ;# ">
+"3255
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3255: __asm("EEDATA equ 0193h");
+[; <" EEDATA equ 0193h ;# ">
+"3288
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3288: __asm("EEDATH equ 0194h");
+[; <" EEDATH equ 0194h ;# ">
+"3308
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3308: __asm("EECON1 equ 0195h");
+[; <" EECON1 equ 0195h ;# ">
+"3370
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3370: __asm("EECON2 equ 0196h");
+[; <" EECON2 equ 0196h ;# ">
+"3390
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3390: __asm("RCREG equ 0199h");
+[; <" RCREG equ 0199h ;# ">
+"3410
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3410: __asm("TXREG equ 019Ah");
+[; <" TXREG equ 019Ah ;# ">
+"3430
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3430: __asm("SP1BRG equ 019Bh");
+[; <" SP1BRG equ 019Bh ;# ">
+"3437
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3437: __asm("SP1BRGL equ 019Bh");
+[; <" SP1BRGL equ 019Bh ;# ">
+"3442
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3442: __asm("SPBRG equ 019Bh");
+[; <" SPBRG equ 019Bh ;# ">
+"3446
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3446: __asm("SPBRGL equ 019Bh");
+[; <" SPBRGL equ 019Bh ;# ">
+"3491
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3491: __asm("SP1BRGH equ 019Ch");
+[; <" SP1BRGH equ 019Ch ;# ">
+"3496
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3496: __asm("SPBRGH equ 019Ch");
+[; <" SPBRGH equ 019Ch ;# ">
+"3529
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3529: __asm("RCSTA equ 019Dh");
+[; <" RCSTA equ 019Dh ;# ">
+"3591
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3591: __asm("TXSTA equ 019Eh");
+[; <" TXSTA equ 019Eh ;# ">
+"3653
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3653: __asm("BAUDCON equ 019Fh");
+[; <" BAUDCON equ 019Fh ;# ">
+"3705
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3705: __asm("WPUB equ 020Dh");
+[; <" WPUB equ 020Dh ;# ">
+"3775
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3775: __asm("WPUE equ 0210h");
+[; <" WPUE equ 0210h ;# ">
+"3796
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3796: __asm("SSPBUF equ 0211h");
+[; <" SSPBUF equ 0211h ;# ">
+"3816
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3816: __asm("SSPADD equ 0212h");
+[; <" SSPADD equ 0212h ;# ">
+"3836
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3836: __asm("SSPMSK equ 0213h");
+[; <" SSPMSK equ 0213h ;# ">
+"3856
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3856: __asm("SSPSTAT equ 0214h");
+[; <" SSPSTAT equ 0214h ;# ">
+"3918
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3918: __asm("SSPCON1 equ 0215h");
+[; <" SSPCON1 equ 0215h ;# ">
+"3923
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 3923: __asm("SSPCON equ 0215h");
+[; <" SSPCON equ 0215h ;# ">
+"4056
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 4056: __asm("SSPCON2 equ 0216h");
+[; <" SSPCON2 equ 0216h ;# ">
+"4118
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 4118: __asm("SSPCON3 equ 0217h");
+[; <" SSPCON3 equ 0217h ;# ">
+"4180
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 4180: __asm("CCPR1 equ 0291h");
+[; <" CCPR1 equ 0291h ;# ">
+"4187
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 4187: __asm("CCPR1L equ 0291h");
+[; <" CCPR1L equ 0291h ;# ">
+"4207
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 4207: __asm("CCPR1H equ 0292h");
+[; <" CCPR1H equ 0292h ;# ">
+"4227
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 4227: __asm("CCP1CON equ 0293h");
+[; <" CCP1CON equ 0293h ;# ">
+"4309
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 4309: __asm("PWM1CON equ 0294h");
+[; <" PWM1CON equ 0294h ;# ">
+"4371
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 4371: __asm("CCP1AS equ 0295h");
+[; <" CCP1AS equ 0295h ;# ">
+"4376
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 4376: __asm("ECCP1AS equ 0295h");
+[; <" ECCP1AS equ 0295h ;# ">
+"4493
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 4493: __asm("PSTR1CON equ 0296h");
+[; <" PSTR1CON equ 0296h ;# ">
+"4537
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 4537: __asm("CCPR2 equ 0298h");
+[; <" CCPR2 equ 0298h ;# ">
+"4544
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 4544: __asm("CCPR2L equ 0298h");
+[; <" CCPR2L equ 0298h ;# ">
+"4564
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 4564: __asm("CCPR2H equ 0299h");
+[; <" CCPR2H equ 0299h ;# ">
+"4584
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 4584: __asm("CCP2CON equ 029Ah");
+[; <" CCP2CON equ 029Ah ;# ">
+"4666
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 4666: __asm("PWM2CON equ 029Bh");
+[; <" PWM2CON equ 029Bh ;# ">
+"4728
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 4728: __asm("CCP2AS equ 029Ch");
+[; <" CCP2AS equ 029Ch ;# ">
+"4733
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 4733: __asm("ECCP2AS equ 029Ch");
+[; <" ECCP2AS equ 029Ch ;# ">
+"4850
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 4850: __asm("PSTR2CON equ 029Dh");
+[; <" PSTR2CON equ 029Dh ;# ">
+"4894
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 4894: __asm("CCPTMRS0 equ 029Eh");
+[; <" CCPTMRS0 equ 029Eh ;# ">
+"4982
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 4982: __asm("CCPTMRS1 equ 029Fh");
+[; <" CCPTMRS1 equ 029Fh ;# ">
+"5016
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5016: __asm("CCPR3 equ 0311h");
+[; <" CCPR3 equ 0311h ;# ">
+"5023
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5023: __asm("CCPR3L equ 0311h");
+[; <" CCPR3L equ 0311h ;# ">
+"5043
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5043: __asm("CCPR3H equ 0312h");
+[; <" CCPR3H equ 0312h ;# ">
+"5063
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5063: __asm("CCP3CON equ 0313h");
+[; <" CCP3CON equ 0313h ;# ">
+"5125
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5125: __asm("PWM3CON equ 0314h");
+[; <" PWM3CON equ 0314h ;# ">
+"5187
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5187: __asm("CCP3AS equ 0315h");
+[; <" CCP3AS equ 0315h ;# ">
+"5192
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5192: __asm("ECCP3AS equ 0315h");
+[; <" ECCP3AS equ 0315h ;# ">
+"5309
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5309: __asm("PSTR3CON equ 0316h");
+[; <" PSTR3CON equ 0316h ;# ">
+"5353
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5353: __asm("CCPR4 equ 0318h");
+[; <" CCPR4 equ 0318h ;# ">
+"5360
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5360: __asm("CCPR4L equ 0318h");
+[; <" CCPR4L equ 0318h ;# ">
+"5380
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5380: __asm("CCPR4H equ 0319h");
+[; <" CCPR4H equ 0319h ;# ">
+"5400
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5400: __asm("CCP4CON equ 031Ah");
+[; <" CCP4CON equ 031Ah ;# ">
+"5450
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5450: __asm("CCPR5 equ 031Ch");
+[; <" CCPR5 equ 031Ch ;# ">
+"5457
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5457: __asm("CCPR5L equ 031Ch");
+[; <" CCPR5L equ 031Ch ;# ">
+"5477
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5477: __asm("CCPR5H equ 031Dh");
+[; <" CCPR5H equ 031Dh ;# ">
+"5497
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5497: __asm("CCP5CON equ 031Eh");
+[; <" CCP5CON equ 031Eh ;# ">
+"5547
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5547: __asm("IOCBP equ 0394h");
+[; <" IOCBP equ 0394h ;# ">
+"5617
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5617: __asm("IOCBN equ 0395h");
+[; <" IOCBN equ 0395h ;# ">
+"5687
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5687: __asm("IOCBF equ 0396h");
+[; <" IOCBF equ 0396h ;# ">
+"5757
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5757: __asm("TMR4 equ 0415h");
+[; <" TMR4 equ 0415h ;# ">
+"5777
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5777: __asm("PR4 equ 0416h");
+[; <" PR4 equ 0416h ;# ">
+"5797
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5797: __asm("T4CON equ 0417h");
+[; <" T4CON equ 0417h ;# ">
+"5868
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5868: __asm("TMR6 equ 041Ch");
+[; <" TMR6 equ 041Ch ;# ">
+"5888
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5888: __asm("PR6 equ 041Dh");
+[; <" PR6 equ 041Dh ;# ">
+"5908
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5908: __asm("T6CON equ 041Eh");
+[; <" T6CON equ 041Eh ;# ">
+"5979
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 5979: __asm("LCDCON equ 0791h");
+[; <" LCDCON equ 0791h ;# ">
+"6050
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 6050: __asm("LCDPS equ 0792h");
+[; <" LCDPS equ 0792h ;# ">
+"6120
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 6120: __asm("LCDREF equ 0793h");
+[; <" LCDREF equ 0793h ;# ">
+"6172
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 6172: __asm("LCDCST equ 0794h");
+[; <" LCDCST equ 0794h ;# ">
+"6212
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 6212: __asm("LCDRL equ 0795h");
+[; <" LCDRL equ 0795h ;# ">
+"6290
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 6290: __asm("LCDSE0 equ 0798h");
+[; <" LCDSE0 equ 0798h ;# ">
+"6352
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 6352: __asm("LCDSE1 equ 0799h");
+[; <" LCDSE1 equ 0799h ;# ">
+"6414
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 6414: __asm("LCDDATA0 equ 07A0h");
+[; <" LCDDATA0 equ 07A0h ;# ">
+"6476
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 6476: __asm("LCDDATA1 equ 07A1h");
+[; <" LCDDATA1 equ 07A1h ;# ">
+"6538
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 6538: __asm("LCDDATA3 equ 07A3h");
+[; <" LCDDATA3 equ 07A3h ;# ">
+"6600
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 6600: __asm("LCDDATA4 equ 07A4h");
+[; <" LCDDATA4 equ 07A4h ;# ">
+"6662
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 6662: __asm("LCDDATA6 equ 07A6h");
+[; <" LCDDATA6 equ 07A6h ;# ">
+"6724
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 6724: __asm("LCDDATA7 equ 07A7h");
+[; <" LCDDATA7 equ 07A7h ;# ">
+"6786
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 6786: __asm("LCDDATA9 equ 07A9h");
+[; <" LCDDATA9 equ 07A9h ;# ">
+"6848
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 6848: __asm("LCDDATA10 equ 07AAh");
+[; <" LCDDATA10 equ 07AAh ;# ">
+"6910
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 6910: __asm("STATUS_SHAD equ 0FE4h");
+[; <" STATUS_SHAD equ 0FE4h ;# ">
+"6942
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 6942: __asm("WREG_SHAD equ 0FE5h");
+[; <" WREG_SHAD equ 0FE5h ;# ">
+"6962
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 6962: __asm("BSR_SHAD equ 0FE6h");
+[; <" BSR_SHAD equ 0FE6h ;# ">
+"6982
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 6982: __asm("PCLATH_SHAD equ 0FE7h");
+[; <" PCLATH_SHAD equ 0FE7h ;# ">
+"7002
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 7002: __asm("FSR0L_SHAD equ 0FE8h");
+[; <" FSR0L_SHAD equ 0FE8h ;# ">
+"7022
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 7022: __asm("FSR0H_SHAD equ 0FE9h");
+[; <" FSR0H_SHAD equ 0FE9h ;# ">
+"7042
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 7042: __asm("FSR1L_SHAD equ 0FEAh");
+[; <" FSR1L_SHAD equ 0FEAh ;# ">
+"7062
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 7062: __asm("FSR1H_SHAD equ 0FEBh");
+[; <" FSR1H_SHAD equ 0FEBh ;# ">
+"7082
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 7082: __asm("STKPTR equ 0FEDh");
+[; <" STKPTR equ 0FEDh ;# ">
+"7102
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 7102: __asm("TOSL equ 0FEEh");
+[; <" TOSL equ 0FEEh ;# ">
+"7122
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h: 7122: __asm("TOSH equ 0FEFh");
+[; <" TOSH equ 0FEFh ;# ">
+"103 mcc_generated_files/mtouch/mtouch_slider.c
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 103: static mtouch_slider_t mtouch_slider[1u] = {
+[v _mtouch_slider `S358 ~T0 @X0 -> -> 1 `i `ux s ]
+[i _mtouch_slider
+:U ..
+:U ..
+. `E2914 0
+. `E2911 0
+. `E2801 0
+-> -> 5 `ui `uc
+-> | << -> 12 `i -> 4 `ui -> 0 `i `uc
+-> -> 15 `ui `uc
+-> -> 100 `ui `us
+-> -> 0 `ui `uc
+-> -> 0 `ui `uc
+-> -> 0 `ui `us
+-> -> 0 `ui `us
+-> -> 0 `ui `us
+-> -> 0 `ui `uc
+..
+..
+]
+"118
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 118: static uint8_t sliderGroupStatus = 0u;
+[v _sliderGroupStatus `uc ~T0 @X0 1 s ]
+[i _sliderGroupStatus
+-> -> 0 `ui `uc
+]
+"119
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 119: static uint16_t resol_value;
+[v _resol_value `us ~T0 @X0 1 s ]
+"120
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 120: static uint8_t resol_bits;
+[v _resol_bits `uc ~T0 @X0 1 s ]
+"121
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 121: static uint8_t middle_node;
+[v _middle_node `uc ~T0 @X0 1 s ]
+"122
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 122: static _Bool wheel_sensor_middle_channel_zero;
+[v _wheel_sensor_middle_channel_zero `a ~T0 @X0 1 s ]
+"123
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 123: static int16_t left_signal = 0, right_signal = 0, middle_signal = 0;
+[v _left_signal `s ~T0 @X0 1 s ]
+[i _left_signal
+-> -> 0 `i `s
+]
+[v _right_signal `s ~T0 @X0 1 s ]
+[i _right_signal
+-> -> 0 `i `s
+]
+[v _middle_signal `s ~T0 @X0 1 s ]
+[i _middle_signal
+-> -> 0 `i `s
+]
+"144
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 144: static void (*callback_position_changed) (enum mtouch_slider_names) = Slider_DefaultCallback;
+[v _callback_position_changed `*F3052 ~T0 @X0 1 s ]
+[i _callback_position_changed
+&U _Slider_DefaultCallback
+]
+"145
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 145: static void (*callback_pressed) (enum mtouch_slider_names) = Slider_DefaultCallback;
+[v _callback_pressed `*F3057 ~T0 @X0 1 s ]
+[i _callback_pressed
+&U _Slider_DefaultCallback
+]
+"146
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 146: static void (*callback_released) (enum mtouch_slider_names) = Slider_DefaultCallback;
+[v _callback_released `*F3062 ~T0 @X0 1 s ]
+[i _callback_released
+&U _Slider_DefaultCallback
+]
+"191
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 191: static uint16_t divide(uint16_t numerator, uint16_t denominator, uint8_t exponent)
+[v _divide `(us ~T0 @X0 1 sf3`us`us`uc ]
+"192
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 192: {
+{
+[e :U _divide ]
+"191
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 191: static uint16_t divide(uint16_t numerator, uint16_t denominator, uint8_t exponent)
+[v _numerator `us ~T0 @X0 1 r1 ]
+[v _denominator `us ~T0 @X0 1 r2 ]
+[v _exponent `uc ~T0 @X0 1 r3 ]
+"192
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 192: {
+[f ]
+"193
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 193:     uint16_t result = 0u;
+[v _result `us ~T0 @X0 1 a ]
+[e = _result -> -> 0 `ui `us ]
+"196
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 196:     exponent++;
+[e ++ _exponent -> -> 1 `i `uc ]
+"198
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 198:     if (denominator != 0u)
+[e $ ! != -> _denominator `ui -> 0 `ui 360  ]
+"199
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 199:     {
+{
+"205
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 205:         while (((numerator & 0x8000u) == 0u) && (exponent != 0u))
+[e $U 361  ]
+[e :U 362 ]
+"206
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 206:         {
+{
+"207
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 207:             exponent--;
+[e -- _exponent -> -> 1 `i `uc ]
+"208
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 208:             numerator = (uint16_t) (numerator << 1);
+[e = _numerator -> << -> _numerator `ui -> 1 `i `us ]
+"209
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 209:         }
+}
+[e :U 361 ]
+"205
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 205:         while (((numerator & 0x8000u) == 0u) && (exponent != 0u))
+[e $ && == & -> _numerator `ui -> 32768 `ui -> 0 `ui != -> _exponent `ui -> 0 `ui 362  ]
+[e :U 363 ]
+"211
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 211:         while ((denominator & 0x8000u) == 0u)
+[e $U 364  ]
+[e :U 365 ]
+"212
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 212:         {
+{
+"213
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 213:             exponent++;
+[e ++ _exponent -> -> 1 `i `uc ]
+"214
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 214:             denominator = (uint16_t) (denominator << 1);
+[e = _denominator -> << -> _denominator `ui -> 1 `i `us ]
+"215
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 215:         }
+}
+[e :U 364 ]
+"211
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 211:         while ((denominator & 0x8000u) == 0u)
+[e $ == & -> _denominator `ui -> 32768 `ui -> 0 `ui 365  ]
+[e :U 366 ]
+"218
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 218:         while ((exponent != 0u) && ((result & 0x8000u) == 0u))
+[e $U 367  ]
+[e :U 368 ]
+"219
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 219:         {
+{
+"220
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 220:             result = (uint16_t) (result << 1);
+[e = _result -> << -> _result `ui -> 1 `i `us ]
+"221
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 221:             exponent--;
+[e -- _exponent -> -> 1 `i `uc ]
+"222
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 222:             if (numerator >= denominator)
+[e $ ! >= -> _numerator `ui -> _denominator `ui 370  ]
+"223
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 223:             {
+{
+"224
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 224:                 numerator -= denominator;
+[e =- _numerator -> _denominator `us ]
+"225
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 225:                 result++;
+[e ++ _result -> -> 1 `i `us ]
+"226
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 226:             }
+}
+[e :U 370 ]
+"227
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 227:             denominator >>= 1;
+[e =>> _denominator -> -> 1 `i `us ]
+"228
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 228:         }
+}
+[e :U 367 ]
+"218
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 218:         while ((exponent != 0u) && ((result & 0x8000u) == 0u))
+[e $ && != -> _exponent `ui -> 0 `ui == & -> _result `ui -> 32768 `ui -> 0 `ui 368  ]
+[e :U 369 ]
+"229
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 229:     }
+}
+[e $U 371  ]
+"230
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 230:     else
+[e :U 360 ]
+"231
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 231:     {
+{
+"232
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 232:         result = 0xffffu;
+[e = _result -> -> 65535 `ui `us ]
+"233
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 233:     }
+}
+[e :U 371 ]
+"236
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 236:     if (exponent)
+[e $ ! != -> _exponent `i -> 0 `i 372  ]
+"237
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 237:     {
+{
+"238
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 238:         result = 0xffffu;
+[e = _result -> -> 65535 `ui `us ]
+"239
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 239:     }
+}
+[e :U 372 ]
+"241
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 241:     return result;
+[e ) _result ]
+[e $UE 359  ]
+"242
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 242: }
+[e :UE 359 ]
+}
+"251
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 251: static int16_t get_difference(mtouch_slider_t* slider, uint16_t previous_position, uint16_t current_position)
+[v _get_difference `(s ~T0 @X0 1 sf3`*S358`us`us ]
+"252
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 252: {
+{
+[e :U _get_difference ]
+"251
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 251: static int16_t get_difference(mtouch_slider_t* slider, uint16_t previous_position, uint16_t current_position)
+[v _slider `*S358 ~T0 @X0 1 r1 ]
+[v _previous_position `us ~T0 @X0 1 r2 ]
+[v _current_position `us ~T0 @X0 1 r3 ]
+"252
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 252: {
+[f ]
+"253
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 253:     int16_t diff;
+[v _diff `s ~T0 @X0 1 a ]
+"254
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 254:     uint16_t rollover_threshold;
+[v _rollover_threshold `us ~T0 @X0 1 a ]
+"257
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 257:     rollover_threshold = resol_value >> 1u;
+[e = _rollover_threshold -> >> -> _resol_value `ui -> 1 `ui `us ]
+"260
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 260:     diff = ((int16_t) current_position - (int16_t) previous_position);
+[e = _diff -> - -> -> _current_position `s `i -> -> _previous_position `s `i `s ]
+"263
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 263:     if (slider->type == MTOUCH_TYPE_WHEEL)
+[e $ ! == -> . *U _slider 1 `ui -> . `E2911 1 `ui 374  ]
+"264
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 264:     {
+{
+"265
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 265:         if (diff < (int16_t) 0u)
+[e $ ! < -> _diff `i -> -> -> 0 `ui `s `i 375  ]
+"266
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 266:         {
+{
+"267
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 267:             if ((0 - (int16_t) rollover_threshold) > diff)
+[e $ ! > - -> 0 `i -> -> _rollover_threshold `s `i -> _diff `i 376  ]
+"268
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 268:             {
+{
+"269
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 269:                 diff = (diff + (int16_t) resol_value);
+[e = _diff -> + -> _diff `i -> -> _resol_value `s `i `s ]
+"270
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 270:             }
+}
+[e :U 376 ]
+"271
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 271:         }
+}
+[e $U 377  ]
+"272
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 272:         else
+[e :U 375 ]
+"273
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 273:         {
+{
+"274
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 274:             if (diff > ((int16_t) rollover_threshold))
+[e $ ! > -> _diff `i -> -> _rollover_threshold `s `i 378  ]
+"275
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 275:             {
+{
+"276
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 276:                 diff = (diff - (int16_t) resol_value);
+[e = _diff -> - -> _diff `i -> -> _resol_value `s `i `s ]
+"277
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 277:             }
+}
+[e :U 378 ]
+"278
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 278:         }
+}
+[e :U 377 ]
+"279
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 279:     }
+}
+[e :U 374 ]
+"281
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 281:     return diff;
+[e ) _diff ]
+[e $UE 373  ]
+"282
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 282: }
+[e :UE 373 ]
+}
+"289
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 289: static uint16_t positional_hysteresis(mtouch_slider_t* slider, uint16_t current_position)
+[v _positional_hysteresis `(us ~T0 @X0 1 sf2`*S358`us ]
+"290
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 290: {
+{
+[e :U _positional_hysteresis ]
+"289
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 289: static uint16_t positional_hysteresis(mtouch_slider_t* slider, uint16_t current_position)
+[v _slider `*S358 ~T0 @X0 1 r1 ]
+[v _current_position `us ~T0 @X0 1 r2 ]
+"290
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 290: {
+[f ]
+"291
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 291:     uint16_t filtered_position, previous_position;
+[v _filtered_position `us ~T0 @X0 1 a ]
+[v _previous_position `us ~T0 @X0 1 a ]
+"292
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 292:     uint8_t hyst_width;
+[v _hyst_width `uc ~T0 @X0 1 a ]
+"293
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 293:     int16_t distance;
+[v _distance `s ~T0 @X0 1 a ]
+"294
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 294:     uint8_t polarity = 0u;
+[v _polarity `uc ~T0 @X0 1 a ]
+[e = _polarity -> -> 0 `ui `uc ]
+"297
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 297:     hyst_width = slider->positionHysteresis;
+[e = _hyst_width . *U _slider 5 ]
+"298
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 298:     previous_position = slider->sliderPosition;
+[e = _previous_position . *U _slider 10 ]
+"301
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 301:     distance = get_difference(slider, previous_position, current_position);
+[e = _distance ( _get_difference (3 , , _slider _previous_position _current_position ]
+"303
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 303:     if (distance < 0)
+[e $ ! < -> _distance `i -> 0 `i 380  ]
+"304
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 304:     {
+{
+"305
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 305:         distance = (0 - distance);
+[e = _distance -> - -> 0 `i -> _distance `i `s ]
+"306
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 306:         polarity = 1u;
+[e = _polarity -> -> 1 `ui `uc ]
+"307
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 307:     }
+}
+[e :U 380 ]
+"311
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 311:     if ((polarity == 1u) && (distance > (int16_t) slider->leftHysteresis))
+[e $ ! && == -> _polarity `ui -> 1 `ui > -> _distance `i -> -> . *U _slider 8 `s `i 381  ]
+"312
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 312:     {
+{
+"314
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 314:         slider->rightHysteresis = hyst_width;
+[e = . *U _slider 7 _hyst_width ]
+"315
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 315:         slider->leftHysteresis = 0u;
+[e = . *U _slider 8 -> -> 0 `ui `uc ]
+"316
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 316:         filtered_position = current_position;
+[e = _filtered_position _current_position ]
+"317
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 317:     }
+}
+[e $U 382  ]
+"318
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 318:     else if ((polarity == 0u) && (distance > (int16_t) slider->rightHysteresis))
+[e :U 381 ]
+[e $ ! && == -> _polarity `ui -> 0 `ui > -> _distance `i -> -> . *U _slider 7 `s `i 383  ]
+"319
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 319:     {
+{
+"321
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 321:         slider->rightHysteresis = 0u;
+[e = . *U _slider 7 -> -> 0 `ui `uc ]
+"322
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 322:         slider->leftHysteresis = hyst_width;
+[e = . *U _slider 8 _hyst_width ]
+"323
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 323:         filtered_position = current_position;
+[e = _filtered_position _current_position ]
+"324
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 324:     }
+}
+[e $U 384  ]
+"325
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 325:     else
+[e :U 383 ]
+"326
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 326:     {
+{
+"328
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 328:         filtered_position = slider->sliderPosition;
+[e = _filtered_position . *U _slider 10 ]
+"329
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 329:     }
+}
+[e :U 384 ]
+[e :U 382 ]
+"331
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 331:     return filtered_position;
+[e ) _filtered_position ]
+[e $UE 379  ]
+"332
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 332: }
+[e :UE 379 ]
+}
+"341
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 341: static uint16_t moving_average_filter(mtouch_slider_t* slider, uint16_t current_position)
+[v _moving_average_filter `(us ~T0 @X0 1 sf2`*S358`us ]
+"342
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 342: {
+{
+[e :U _moving_average_filter ]
+"341
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 341: static uint16_t moving_average_filter(mtouch_slider_t* slider, uint16_t current_position)
+[v _slider `*S358 ~T0 @X0 1 r1 ]
+[v _current_position `us ~T0 @X0 1 r2 ]
+"342
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 342: {
+[f ]
+"343
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 343:     uint16_t filtered_position, dist_temp;
+[v _filtered_position `us ~T0 @X0 1 a ]
+[v _dist_temp `us ~T0 @X0 1 a ]
+"344
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 344:     uint16_t previous_position;
+[v _previous_position `us ~T0 @X0 1 a ]
+"345
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 345:     int16_t distance;
+[v _distance `s ~T0 @X0 1 a ]
+"347
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 347:     previous_position = slider->rawPosition;
+[e = _previous_position . *U _slider 9 ]
+"349
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 349:     distance = get_difference(slider, previous_position, current_position);
+[e = _distance ( _get_difference (3 , , _slider _previous_position _current_position ]
+"352
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 352:     if ((distance == 1) || (distance == -1))
+[e $ ! || == -> _distance `i -> 1 `i == -> _distance `i -U -> 1 `i 386  ]
+"353
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 353:     {
+{
+"354
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 354:         filtered_position = previous_position;
+[e = _filtered_position _previous_position ]
+"355
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 355:     }
+}
+[e $U 387  ]
+"356
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 356:     else
+[e :U 386 ]
+"357
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 357:     {
+{
+"359
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 359:         if (distance < 0)
+[e $ ! < -> _distance `i -> 0 `i 388  ]
+"360
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 360:         {
+{
+"361
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 361:             distance = (0 - distance);
+[e = _distance -> - -> 0 `i -> _distance `i `s ]
+"362
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 362:             dist_temp = (uint16_t) distance;
+[e = _dist_temp -> _distance `us ]
+"363
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 363:             dist_temp = dist_temp >> 1u;
+[e = _dist_temp -> >> -> _dist_temp `ui -> 1 `ui `us ]
+"364
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 364:             distance = (int16_t) (0 - (int16_t) dist_temp);
+[e = _distance -> - -> 0 `i -> -> _dist_temp `s `i `s ]
+"366
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 366:         }
+}
+[e $U 389  ]
+"367
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 367:         else
+[e :U 388 ]
+"368
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 368:         {
+{
+"369
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 369:             dist_temp = (uint16_t) (distance);
+[e = _dist_temp -> _distance `us ]
+"370
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 370:             dist_temp = dist_temp >> 1u;
+[e = _dist_temp -> >> -> _dist_temp `ui -> 1 `ui `us ]
+"371
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 371:             distance = (int16_t) (dist_temp);
+[e = _distance -> _dist_temp `s ]
+"372
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 372:         }
+}
+[e :U 389 ]
+"373
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 373:         filtered_position = (previous_position) + (uint16_t) (distance);
+[e = _filtered_position -> + -> _previous_position `ui -> -> _distance `us `ui `us ]
+"374
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 374:         filtered_position &= (resol_value - 1u);
+[e =& _filtered_position -> - -> _resol_value `ui -> 1 `ui `us ]
+"375
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 375:     }
+}
+[e :U 387 ]
+"377
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 377:     return filtered_position;
+[e ) _filtered_position ]
+[e $UE 385  ]
+"378
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 378: }
+[e :UE 385 ]
+}
+"385
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 385: static uint16_t interpolate(uint16_t delta1, uint16_t delta2, uint16_t delta3, uint8_t num_bits)
+[v _interpolate `(us ~T0 @X0 1 sf4`us`us`us`uc ]
+"386
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 386: {
+{
+[e :U _interpolate ]
+"385
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 385: static uint16_t interpolate(uint16_t delta1, uint16_t delta2, uint16_t delta3, uint8_t num_bits)
+[v _delta1 `us ~T0 @X0 1 r1 ]
+[v _delta2 `us ~T0 @X0 1 r2 ]
+[v _delta3 `us ~T0 @X0 1 r3 ]
+[v _num_bits `uc ~T0 @X0 1 r4 ]
+"386
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 386: {
+[f ]
+"387
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 387:     uint16_t rtnval;
+[v _rtnval `us ~T0 @X0 1 a ]
+"389
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 389:     if (delta1 >= delta3)
+[e $ ! >= -> _delta1 `ui -> _delta3 `ui 391  ]
+"390
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 390:     {
+{
+"391
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 391:         rtnval = (uint16_t) ((delta2 - delta3) + (delta1 - delta3));
+[e = _rtnval -> + - -> _delta2 `ui -> _delta3 `ui - -> _delta1 `ui -> _delta3 `ui `us ]
+"392
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 392:         rtnval = (uint16_t) (divide((uint16_t) (delta2 - delta3), rtnval, num_bits) - (uint16_t) ((uint16_t) 1u << (num_bits)));
+[e = _rtnval -> - -> ( _divide (3 , , -> - -> _delta2 `ui -> _delta3 `ui `us _rtnval _num_bits `ui -> -> << -> -> -> 1 `ui `us `ui -> _num_bits `i `us `ui `us ]
+"393
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 393:     }
+}
+[e $U 392  ]
+"394
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 394:     else
+[e :U 391 ]
+"395
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 395:     {
+{
+"396
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 396:         rtnval = (uint16_t) ((delta2 - delta1) + (delta3 - delta1));
+[e = _rtnval -> + - -> _delta2 `ui -> _delta1 `ui - -> _delta3 `ui -> _delta1 `ui `us ]
+"397
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 397:         rtnval = divide((uint16_t) (delta3 - delta1), rtnval, num_bits);
+[e = _rtnval ( _divide (3 , , -> - -> _delta3 `ui -> _delta1 `ui `us _rtnval _num_bits ]
+"398
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 398:     }
+}
+[e :U 392 ]
+"400
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 400:     return rtnval;
+[e ) _rtnval ]
+[e $UE 390  ]
+"401
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 401: }
+[e :UE 390 ]
+}
+"408
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 408: static int16_t Slider_FindMiddle(mtouch_slider_t* slider)
+[v _Slider_FindMiddle `(s ~T0 @X0 1 sf1`*S358 ]
+"409
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 409: {
+{
+[e :U _Slider_FindMiddle ]
+"408
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 408: static int16_t Slider_FindMiddle(mtouch_slider_t* slider)
+[v _slider `*S358 ~T0 @X0 1 r1 ]
+"409
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 409: {
+[f ]
+"410
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 410:     uint8_t i;
+[v _i `uc ~T0 @X0 1 a ]
+"411
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 411:     int16_t channelDelta, maximumDelta;
+[v _channelDelta `s ~T0 @X0 1 a ]
+[v _maximumDelta `s ~T0 @X0 1 a ]
+"413
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 413:     maximumDelta = 0;
+[e = _maximumDelta -> -> 0 `i `s ]
+"414
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 414:     middle_node = slider->startSegment;
+[e = _middle_node -> . *U _slider 2 `uc ]
+"417
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 417:     for (i = slider->startSegment; i < (slider->startSegment + slider->segmentCount); i++)
+{
+[e = _i -> . *U _slider 2 `uc ]
+[e $U 397  ]
+[e :U 394 ]
+"418
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 418:     {
+{
+"420
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 420:         channelDelta = (int16_t) MTOUCH_Button_Deviation_Get(i);
+[e = _channelDelta -> ( _MTOUCH_Button_Deviation_Get (1 -> _i `E2801 `s ]
+"423
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 423:         if (channelDelta > maximumDelta)
+[e $ ! > -> _channelDelta `i -> _maximumDelta `i 398  ]
+"424
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 424:         {
+{
+"425
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 425:             middle_node = i;
+[e = _middle_node _i ]
+"426
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 426:             maximumDelta = channelDelta;
+[e = _maximumDelta _channelDelta ]
+"427
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 427:         }
+}
+[e :U 398 ]
+"428
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 428:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 397 ]
+[e $ < -> _i `ui + -> . *U _slider 2 `ui -> . *U _slider 3 `ui 394  ]
+[e :U 395 ]
+}
+"430
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 430:     return maximumDelta;
+[e ) _maximumDelta ]
+[e $UE 393  ]
+"431
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 431: }
+[e :UE 393 ]
+}
+"438
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 438: static int16_t Slider_FindLeft(mtouch_slider_t* slider)
+[v _Slider_FindLeft `(s ~T0 @X0 1 sf1`*S358 ]
+"439
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 439: {
+{
+[e :U _Slider_FindLeft ]
+"438
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 438: static int16_t Slider_FindLeft(mtouch_slider_t* slider)
+[v _slider `*S358 ~T0 @X0 1 r1 ]
+"439
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 439: {
+[f ]
+"440
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 440:     uint8_t ref_node = slider->startSegment;
+[v _ref_node `uc ~T0 @X0 1 a ]
+[e = _ref_node -> . *U _slider 2 `uc ]
+"442
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 442:     wheel_sensor_middle_channel_zero = 0;
+[e = _wheel_sensor_middle_channel_zero -> -> 0 `i `a ]
+"445
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 445:     if (middle_node == ref_node)
+[e $ ! == -> _middle_node `i -> _ref_node `i 400  ]
+"446
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 446:     {
+{
+"447
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 447:         if (slider->type == MTOUCH_TYPE_WHEEL)
+[e $ ! == -> . *U _slider 1 `ui -> . `E2911 1 `ui 401  ]
+"448
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 448:         {
+{
+"451
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 451:             left_signal = (int16_t) MTOUCH_Button_Deviation_Get(ref_node + slider->segmentCount - 1u);
+[e = _left_signal -> ( _MTOUCH_Button_Deviation_Get (1 -> - -> + -> _ref_node `i -> . *U _slider 3 `i `ui -> 1 `ui `E2801 `s ]
+"454
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 454:             right_signal = (int16_t) MTOUCH_Button_Deviation_Get(ref_node + 1u);
+[e = _right_signal -> ( _MTOUCH_Button_Deviation_Get (1 -> + -> _ref_node `ui -> 1 `ui `E2801 `s ]
+"456
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 456:             if(left_signal > right_signal)
+[e $ ! > -> _left_signal `i -> _right_signal `i 402  ]
+"457
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 457:             {
+{
+"458
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 458:                 wheel_sensor_middle_channel_zero = 1;
+[e = _wheel_sensor_middle_channel_zero -> -> 1 `i `a ]
+"459
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 459:             }
+}
+[e :U 402 ]
+"460
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 460:         }
+}
+[e $U 403  ]
+"461
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 461:         else
+[e :U 401 ]
+"462
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 462:         {
+{
+"464
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 464:             left_signal = 0;
+[e = _left_signal -> -> 0 `i `s ]
+"465
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 465:         }
+}
+[e :U 403 ]
+"466
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 466:     }
+}
+[e $U 404  ]
+"467
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 467:     else
+[e :U 400 ]
+"468
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 468:     {
+{
+"469
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 469:         left_signal = (int16_t) MTOUCH_Button_Deviation_Get(middle_node - 1u);
+[e = _left_signal -> ( _MTOUCH_Button_Deviation_Get (1 -> - -> _middle_node `ui -> 1 `ui `E2801 `s ]
+"470
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 470:     }
+}
+[e :U 404 ]
+"472
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 472:     if (left_signal < 0)
+[e $ ! < -> _left_signal `i -> 0 `i 405  ]
+"473
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 473:     {
+{
+"474
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 474:         left_signal = 0;
+[e = _left_signal -> -> 0 `i `s ]
+"475
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 475:     }
+}
+[e :U 405 ]
+"476
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 476:     return left_signal;
+[e ) _left_signal ]
+[e $UE 399  ]
+"477
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 477: }
+[e :UE 399 ]
+}
+"484
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 484: static int16_t Slider_FindRight(mtouch_slider_t* slider)
+[v _Slider_FindRight `(s ~T0 @X0 1 sf1`*S358 ]
+"485
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 485: {
+{
+[e :U _Slider_FindRight ]
+"484
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 484: static int16_t Slider_FindRight(mtouch_slider_t* slider)
+[v _slider `*S358 ~T0 @X0 1 r1 ]
+"485
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 485: {
+[f ]
+"486
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 486:     uint8_t ref_node = slider->startSegment;
+[v _ref_node `uc ~T0 @X0 1 a ]
+[e = _ref_node -> . *U _slider 2 `uc ]
+"489
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 489:     if (middle_node == (ref_node + slider->segmentCount - 1u))
+[e $ ! == -> _middle_node `ui - -> + -> _ref_node `i -> . *U _slider 3 `i `ui -> 1 `ui 407  ]
+"490
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 490:     {
+{
+"491
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 491:         if (slider->type == MTOUCH_TYPE_WHEEL)
+[e $ ! == -> . *U _slider 1 `ui -> . `E2911 1 `ui 408  ]
+"492
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 492:         {
+{
+"495
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 495:             right_signal = (int16_t) MTOUCH_Button_Deviation_Get(ref_node);
+[e = _right_signal -> ( _MTOUCH_Button_Deviation_Get (1 -> _ref_node `E2801 `s ]
+"496
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 496:         }
+}
+[e $U 409  ]
+"497
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 497:         else
+[e :U 408 ]
+"498
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 498:         {
+{
+"500
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 500:             right_signal = 0;
+[e = _right_signal -> -> 0 `i `s ]
+"501
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 501:         }
+}
+[e :U 409 ]
+"502
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 502:     }
+}
+[e $U 410  ]
+"503
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 503:     else
+[e :U 407 ]
+"504
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 504:     {
+{
+"505
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 505:         right_signal = (int16_t) MTOUCH_Button_Deviation_Get(middle_node + 1u);
+[e = _right_signal -> ( _MTOUCH_Button_Deviation_Get (1 -> + -> _middle_node `ui -> 1 `ui `E2801 `s ]
+"506
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 506:     }
+}
+[e :U 410 ]
+"508
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 508:     if (right_signal < 0)
+[e $ ! < -> _right_signal `i -> 0 `i 411  ]
+"509
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 509:     {
+{
+"510
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 510:         right_signal = 0;
+[e = _right_signal -> -> 0 `i `s ]
+"511
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 511:     }
+}
+[e :U 411 ]
+"513
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 513:     return right_signal;
+[e ) _right_signal ]
+[e $UE 406  ]
+"515
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 515: }
+[e :UE 406 ]
+}
+"522
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 522: static uint16_t calculate_raw_position(mtouch_slider_t* slider)
+[v _calculate_raw_position `(us ~T0 @X0 1 sf1`*S358 ]
+"523
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 523: {
+{
+[e :U _calculate_raw_position ]
+"522
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 522: static uint16_t calculate_raw_position(mtouch_slider_t* slider)
+[v _slider `*S358 ~T0 @X0 1 r1 ]
+"523
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 523: {
+[f ]
+"524
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 524:     uint8_t ref_node;
+[v _ref_node `uc ~T0 @X0 1 a ]
+"525
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 525:     uint8_t interpolation_bits;
+[v _interpolation_bits `uc ~T0 @X0 1 a ]
+"526
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 526:     uint8_t interpolation_scale;
+[v _interpolation_scale `uc ~T0 @X0 1 a ]
+"527
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 527:     uint8_t size;
+[v _size `uc ~T0 @X0 1 a ]
+"528
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 528:     uint16_t position, deadband, deadband_set;
+[v _position `us ~T0 @X0 1 a ]
+[v _deadband `us ~T0 @X0 1 a ]
+[v _deadband_set `us ~T0 @X0 1 a ]
+"531
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 531:     ref_node = slider->startSegment;
+[e = _ref_node -> . *U _slider 2 `uc ]
+"532
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 532:     size = slider->segmentCount;
+[e = _size . *U _slider 3 ]
+"541
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 541:     if (size < 16u)
+[e $ ! < -> _size `ui -> 16 `ui 413  ]
+"542
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 542:     {
+{
+"543
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 543:         interpolation_bits = 12u;
+[e = _interpolation_bits -> -> 12 `ui `uc ]
+"544
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 544:         interpolation_scale = 0u;
+[e = _interpolation_scale -> -> 0 `ui `uc ]
+"545
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 545:     }
+}
+[e $U 414  ]
+"546
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 546:     else
+[e :U 413 ]
+"547
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 547:     {
+{
+"548
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 548:         interpolation_bits = 8u;
+[e = _interpolation_bits -> -> 8 `ui `uc ]
+"549
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 549:         interpolation_scale = 4u;
+[e = _interpolation_scale -> -> 4 `ui `uc ]
+"550
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 550:     }
+}
+[e :U 414 ]
+"553
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 553:     if (wheel_sensor_middle_channel_zero == 1u)
+[e $ ! == -> _wheel_sensor_middle_channel_zero `ui -> 1 `ui 415  ]
+"554
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 554:     {
+{
+"555
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 555:         position = (uint16_t) ((uint16_t) (size) << interpolation_bits);
+[e = _position -> << -> -> _size `us `ui -> _interpolation_bits `i `us ]
+"556
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 556:     }
+}
+[e $U 416  ]
+"557
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 557:     else
+[e :U 415 ]
+"558
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 558:     {
+{
+"559
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 559:         position = (uint16_t) ((middle_node - ref_node) << interpolation_bits);
+[e = _position -> << - -> _middle_node `i -> _ref_node `i -> _interpolation_bits `i `us ]
+"560
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 560:     }
+}
+[e :U 416 ]
+"563
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 563:     position += interpolate((uint16_t) left_signal, (uint16_t) middle_signal, (uint16_t) right_signal, interpolation_bits);
+[e =+ _position -> ( _interpolate (4 , , , -> _left_signal `us -> _middle_signal `us -> _right_signal `us _interpolation_bits `us ]
+"566
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 566:     if (size > 2u)
+[e $ ! > -> _size `ui -> 2 `ui 417  ]
+"567
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 567:     {
+{
+"568
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 568:         if (slider->type == MTOUCH_TYPE_WHEEL)
+[e $ ! == -> . *U _slider 1 `ui -> . `E2911 1 `ui 418  ]
+"569
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 569:         {
+{
+"570
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 570:             position = divide(position, (uint16_t) (size), interpolation_scale);
+[e = _position ( _divide (3 , , _position -> _size `us _interpolation_scale ]
+"571
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 571:         }
+}
+[e $U 419  ]
+"572
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 572:         else
+[e :U 418 ]
+"573
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 573:         {
+{
+"574
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 574:             position = divide(position, (uint16_t) ((uint16_t) size - 1u), interpolation_scale);
+[e = _position ( _divide (3 , , _position -> - -> -> _size `us `ui -> 1 `ui `us _interpolation_scale ]
+"575
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 575:         }
+}
+[e :U 419 ]
+"576
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 576:     }
+}
+[e :U 417 ]
+"579
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 579:     if (position > (uint16_t)((uint16_t)1u << 12u))
+[e $ ! > -> _position `ui -> -> << -> -> -> 1 `ui `us `ui -> 12 `ui `us `ui 420  ]
+"580
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 580:     {
+{
+"581
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 581:         position = (uint16_t)((uint16_t)1u << 12u);
+[e = _position -> << -> -> -> 1 `ui `us `ui -> 12 `ui `us ]
+"582
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 582:     }
+}
+[e :U 420 ]
+"585
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 585:     if ((slider->type == MTOUCH_TYPE_SLIDER) && (0u != (slider->resolDeadband & (0x0Fu))))
+[e $ ! && == -> . *U _slider 1 `ui -> . `E2911 0 `ui != -> 0 `ui & -> . *U _slider 4 `ui -> 15 `ui 421  ]
+"586
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 586:     {
+{
+"588
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 588:         deadband = 0u;
+[e = _deadband -> -> 0 `ui `us ]
+"589
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 589:         deadband_set = (uint8_t) (slider->resolDeadband & (0x0Fu));
+[e = _deadband_set -> -> & -> . *U _slider 4 `ui -> 15 `ui `uc `us ]
+"590
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 590:         while (deadband_set > 0u)
+[e $U 422  ]
+[e :U 423 ]
+"591
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 591:         {
+{
+"592
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 592:             deadband_set--;
+[e -- _deadband_set -> -> 1 `i `us ]
+"593
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 593:             deadband += ((uint16_t)((uint16_t)1u << 12u)/100u);
+[e =+ _deadband -> / -> -> << -> -> -> 1 `ui `us `ui -> 12 `ui `us `ui -> 100 `ui `us ]
+"594
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 594:         }
+}
+[e :U 422 ]
+"590
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 590:         while (deadband_set > 0u)
+[e $ > -> _deadband_set `ui -> 0 `ui 423  ]
+[e :U 424 ]
+"596
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 596:         if (position < deadband)
+[e $ ! < -> _position `ui -> _deadband `ui 425  ]
+"597
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 597:         {
+{
+"598
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 598:             position = 0u;
+[e = _position -> -> 0 `ui `us ]
+"599
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 599:         }
+}
+[e $U 426  ]
+"600
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 600:         else
+[e :U 425 ]
+"601
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 601:         {
+{
+"602
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 602:             position = (uint16_t) (position - deadband);
+[e = _position -> - -> _position `ui -> _deadband `ui `us ]
+"603
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 603:         }
+}
+[e :U 426 ]
+"608
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 608:         position = divide(position, (uint16_t) ((uint16_t)((uint16_t)1u << 12u) - (uint16_t) (deadband << 1u)), 12u);
+[e = _position ( _divide (3 , , _position -> - -> -> << -> -> -> 1 `ui `us `ui -> 12 `ui `us `ui -> -> << -> _deadband `ui -> 1 `ui `us `ui `us -> -> 12 `ui `uc ]
+"609
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 609:     }
+}
+[e :U 421 ]
+"612
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 612:     position = position >> (12u - resol_bits);
+[e = _position -> >> -> _position `ui - -> 12 `ui -> _resol_bits `ui `us ]
+"615
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 615:     if (position > (uint16_t) (((uint16_t) 1 << resol_bits)) - 1u)
+[e $ ! > -> _position `ui - -> -> << -> -> -> 1 `i `us `ui -> _resol_bits `i `us `ui -> 1 `ui 427  ]
+"616
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 616:     {
+{
+"617
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 617:         position = (uint16_t) ((uint16_t) 1 << resol_bits) - 1u;
+[e = _position -> - -> -> << -> -> -> 1 `i `us `ui -> _resol_bits `i `us `ui -> 1 `ui `us ]
+"618
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 618:     }
+}
+[e :U 427 ]
+"620
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 620:     return position;
+[e ) _position ]
+[e $UE 412  ]
+"621
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 621: }
+[e :UE 412 ]
+}
+"628
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 628: static uint16_t calculate_contact_size(mtouch_slider_t* slider)
+[v _calculate_contact_size `(us ~T0 @X0 1 sf1`*S358 ]
+"629
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 629: {
+{
+[e :U _calculate_contact_size ]
+"628
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 628: static uint16_t calculate_contact_size(mtouch_slider_t* slider)
+[v _slider `*S358 ~T0 @X0 1 r1 ]
+"629
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 629: {
+[f ]
+"630
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 630:     uint16_t contact_size;
+[v _contact_size `us ~T0 @X0 1 a ]
+"632
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 632:     middle_signal = Slider_FindMiddle(slider);
+[e = _middle_signal ( _Slider_FindMiddle (1 _slider ]
+"633
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 633:     right_signal = Slider_FindRight(slider);
+[e = _right_signal ( _Slider_FindRight (1 _slider ]
+"634
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 634:     left_signal = Slider_FindLeft(slider);
+[e = _left_signal ( _Slider_FindLeft (1 _slider ]
+"636
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 636:     if (right_signal > left_signal)
+[e $ ! > -> _right_signal `i -> _left_signal `i 429  ]
+"637
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 637:     {
+{
+"638
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 638:         contact_size = middle_signal + right_signal;
+[e = _contact_size -> + -> _middle_signal `i -> _right_signal `i `us ]
+"639
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 639:     }
+}
+[e $U 430  ]
+"640
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 640:     else
+[e :U 429 ]
+"641
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 641:     {
+{
+"642
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 642:         contact_size = middle_signal + left_signal;
+[e = _contact_size -> + -> _middle_signal `i -> _left_signal `i `us ]
+"643
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 643:     }
+}
+[e :U 430 ]
+"645
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 645:     if (contact_size < slider->contactThreshold)
+[e $ ! < -> _contact_size `ui -> . *U _slider 6 `ui 431  ]
+"646
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 646:     {
+{
+"647
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 647:         contact_size = 0u;
+[e = _contact_size -> -> 0 `ui `us ]
+"648
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 648:     }
+}
+[e :U 431 ]
+"650
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 650:     return contact_size;
+[e ) _contact_size ]
+[e $UE 428  ]
+"651
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 651: }
+[e :UE 428 ]
+}
+"658
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 658: static uint16_t calculate_position(mtouch_slider_t* slider)
+[v _calculate_position `(us ~T0 @X0 1 sf1`*S358 ]
+"659
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 659: {
+{
+[e :U _calculate_position ]
+"658
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 658: static uint16_t calculate_position(mtouch_slider_t* slider)
+[v _slider `*S358 ~T0 @X0 1 r1 ]
+"659
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 659: {
+[f ]
+"660
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 660:     uint16_t raw_position, filtered_position, position;
+[v _raw_position `us ~T0 @X0 1 a ]
+[v _filtered_position `us ~T0 @X0 1 a ]
+[v _position `us ~T0 @X0 1 a ]
+"663
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 663:     raw_position = calculate_raw_position(slider);
+[e = _raw_position ( _calculate_raw_position (1 _slider ]
+"666
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 666:     if ((slider->sliderStatus & (uint8_t)((uint8_t)3u<<0u)) != MTOUCH_SLIDER_STATE_pressed)
+[e $ ! != & -> . *U _slider 12 `i -> -> << -> -> -> 3 `ui `uc `i -> 0 `ui `uc `i -> . `E2990 2 `i 433  ]
+"667
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 667:     {
+{
+"669
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 669:         filtered_position = raw_position;
+[e = _filtered_position _raw_position ]
+"670
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 670:     }
+}
+[e $U 434  ]
+"671
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 671:     else
+[e :U 433 ]
+"672
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 672:     {
+{
+"673
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 673:         filtered_position = moving_average_filter(slider, raw_position);
+[e = _filtered_position ( _moving_average_filter (2 , _slider _raw_position ]
+"674
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 674:     }
+}
+[e :U 434 ]
+"676
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 676:     slider->rawPosition = raw_position;
+[e = . *U _slider 9 _raw_position ]
+"679
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 679:     position = positional_hysteresis(slider, filtered_position);
+[e = _position ( _positional_hysteresis (2 , _slider _filtered_position ]
+"681
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 681:     return position;
+[e ) _position ]
+[e $UE 432  ]
+"683
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 683: }
+[e :UE 432 ]
+}
+"690
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 690: static void Slider_Service(enum mtouch_slider_names sliderName)
+[v _Slider_Service `(v ~T0 @X0 1 sf1`E2914 ]
+"691
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 691: {
+{
+[e :U _Slider_Service ]
+"690
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 690: static void Slider_Service(enum mtouch_slider_names sliderName)
+[v _sliderName `E2914 ~T0 @X0 1 r1 ]
+"691
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 691: {
+[f ]
+"693
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 693:     uint16_t segment, position;
+[v _segment `us ~T0 @X0 1 a ]
+[v _position `us ~T0 @X0 1 a ]
+"694
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 694:     uint8_t status = 0u, group_status = 0u;
+[v _status `uc ~T0 @X0 1 a ]
+[e = _status -> -> 0 `ui `uc ]
+[v _group_status `uc ~T0 @X0 1 a ]
+[e = _group_status -> -> 0 `ui `uc ]
+"695
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 695:     uint8_t valid_contact_found = 0u;
+[v _valid_contact_found `uc ~T0 @X0 1 a ]
+[e = _valid_contact_found -> -> 0 `ui `uc ]
+"697
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 697:     if (sliderName < 1u)
+[e $ ! < -> _sliderName `ui -> 1 `ui 436  ]
+"698
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 698:     {
+{
+"700
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 700:         mtouch_slider_t* slider = &mtouch_slider[sliderName];
+[v _slider `*S358 ~T0 @X0 1 a ]
+[e = _slider &U *U + &U _mtouch_slider * -> _sliderName `ux -> -> # *U &U _mtouch_slider `ui `ux ]
+"702
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 702:         if ((slider->type <= MTOUCH_TYPE_WHEEL) || (slider->resolDeadband <= 0xCFu))
+[e $ ! || <= -> . *U _slider 1 `ui -> . `E2911 1 `ui <= -> . *U _slider 4 `ui -> 207 `ui 437  ]
+"703
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 703:         {
+{
+"705
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 705:             resol_bits = (slider->resolDeadband & 0xF0u) >> 4u;
+[e = _resol_bits -> >> & -> . *U _slider 4 `ui -> 240 `ui -> 4 `ui `uc ]
+"706
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 706:             resol_value = (uint16_t) ((uint16_t) 1u << resol_bits);
+[e = _resol_value -> << -> -> -> 1 `ui `us `ui -> _resol_bits `i `us ]
+"709
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 709:             slider->contactSize = calculate_contact_size(slider);
+[e = . *U _slider 11 ( _calculate_contact_size (1 _slider ]
+"711
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 711:             if (slider->contactSize >= slider->contactThreshold)
+[e $ ! >= -> . *U _slider 11 `ui -> . *U _slider 6 `ui 438  ]
+"712
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 712:             {
+{
+"714
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 714:                 if ((slider->sliderStatus & (uint8_t)((uint8_t)3u<<0u)) == MTOUCH_SLIDER_STATE_pressed)
+[e $ ! == & -> . *U _slider 12 `i -> -> << -> -> -> 3 `ui `uc `i -> 0 `ui `uc `i -> . `E2990 2 `i 439  ]
+"715
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 715:                 {
+{
+"716
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 716:                     valid_contact_found = 1u;
+[e = _valid_contact_found -> -> 1 `ui `uc ]
+"717
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 717:                 }
+}
+[e $U 440  ]
+"718
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 718:                 else
+[e :U 439 ]
+"719
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 719:                 {
+{
+"721
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 721:                     segment = slider->startSegment;
+[e = _segment -> . *U _slider 2 `us ]
+"722
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 722:                     do
+[e :U 443 ]
+"723
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 723:                     {
+{
+"724
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 724:                         if (MTOUCH_Button_isPressed(segment))
+[e $ ! != -> ( _MTOUCH_Button_isPressed (1 -> _segment `E2801 `i -> 0 `i 444  ]
+"725
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 725:                         {
+{
+"727
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 727:                             valid_contact_found = 1u;
+[e = _valid_contact_found -> -> 1 `ui `uc ]
+"728
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 728:                             callback_pressed(sliderName);
+[e ( *U _callback_pressed (1 _sliderName ]
+"729
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 729:                             break;
+[e $U 442  ]
+"730
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 730:                         }
+}
+[e :U 444 ]
+"733
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 733:                         segment = segment + 1u;
+[e = _segment -> + -> _segment `ui -> 1 `ui `us ]
+"735
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 735:                     }
+}
+[e $ < -> _segment `ui + -> . *U _slider 2 `ui -> . *U _slider 3 `ui 443  ]
+[e :U 442 ]
+"737
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 737:                 }
+}
+[e :U 440 ]
+"738
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 738:             }
+}
+[e $U 445  ]
+"739
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 739:             else
+[e :U 438 ]
+"740
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 740:             {
+{
+"742
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 742:             }
+}
+[e :U 445 ]
+"744
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 744:             if (0u == valid_contact_found)
+[e $ ! == -> 0 `ui -> _valid_contact_found `ui 446  ]
+"745
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 745:             {
+{
+"747
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 747:                 slider->contactSize = 0u;
+[e = . *U _slider 11 -> -> 0 `ui `us ]
+"749
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 749:                 if ((slider->sliderStatus & (uint8_t)((uint8_t)3u<<0u)) == MTOUCH_SLIDER_STATE_pressed)
+[e $ ! == & -> . *U _slider 12 `i -> -> << -> -> -> 3 `ui `uc `i -> 0 `ui `uc `i -> . `E2990 2 `i 447  ]
+"750
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 750:                 {
+{
+"751
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 751:                     slider->sliderStatus = MTOUCH_SLIDER_STATE_notPressed;
+[e = . *U _slider 12 -> . `E2990 1 `uc ]
+"752
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 752:                     callback_released(sliderName);
+[e ( *U _callback_released (1 _sliderName ]
+"753
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 753:                 }
+}
+[e $U 448  ]
+"754
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 754:                 else
+[e :U 447 ]
+"755
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 755:                 {
+{
+"756
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 756:                     slider->sliderStatus = MTOUCH_SLIDER_STATE_notPressed;
+[e = . *U _slider 12 -> . `E2990 1 `uc ]
+"757
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 757:                 }
+}
+[e :U 448 ]
+"758
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 758:             }
+}
+[e $U 449  ]
+"759
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 759:             else
+[e :U 446 ]
+"760
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 760:             {
+{
+"762
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 762:                 position = calculate_position(slider);
+[e = _position ( _calculate_position (1 _slider ]
+"765
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 765:                 if (slider->sliderPosition != position)
+[e $ ! != -> . *U _slider 10 `ui -> _position `ui 450  ]
+"766
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 766:                 {
+{
+"767
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 767:                     status |= (uint8_t)((uint8_t)1u<<2u);
+[e =| _status -> -> << -> -> -> 1 `ui `uc `i -> 2 `ui `uc `uc ]
+"768
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 768:                     slider->sliderPosition = position;
+[e = . *U _slider 10 _position ]
+"769
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 769:                     callback_position_changed(sliderName);
+[e ( *U _callback_position_changed (1 _sliderName ]
+"770
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 770:                 }
+}
+[e :U 450 ]
+"773
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 773:                 status |= MTOUCH_SLIDER_STATE_pressed;
+[e =| _status -> -> . `E2990 2 `i `uc ]
+"775
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 775:                 status |= (uint8_t)((uint8_t)1u<<7u);
+[e =| _status -> -> << -> -> -> 1 `ui `uc `i -> 7 `ui `uc `uc ]
+"776
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 776:             }
+}
+[e :U 449 ]
+"779
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 779:             slider->sliderStatus = status;
+[e = . *U _slider 12 _status ]
+"781
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 781:             group_status |= (uint8_t) (status & ((uint8_t)((uint8_t)1u<<7u) | MTOUCH_SLIDER_STATE_pressed));
+[e =| _group_status -> -> & -> _status `i | -> -> << -> -> -> 1 `ui `uc `i -> 7 `ui `uc `i -> . `E2990 2 `i `uc `uc ]
+"783
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 783:             sliderGroupStatus |= group_status;
+[e =| _sliderGroupStatus -> _group_status `uc ]
+"785
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 785:         }
+}
+[e :U 437 ]
+"786
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 786:     }
+}
+[e :U 436 ]
+"788
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 788: }
+[e :UE 435 ]
+}
+"795
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 795: static void Slider_Initialize(enum mtouch_slider_names sliderName)
+[v _Slider_Initialize `(v ~T0 @X0 1 sf1`E2914 ]
+"796
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 796: {
+{
+[e :U _Slider_Initialize ]
+"795
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 795: static void Slider_Initialize(enum mtouch_slider_names sliderName)
+[v _sliderName `E2914 ~T0 @X0 1 r1 ]
+"796
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 796: {
+[f ]
+"797
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 797:     if (sliderName < 1u)
+[e $ ! < -> _sliderName `ui -> 1 `ui 452  ]
+"798
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 798:     {
+{
+"799
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 799:         mtouch_slider_t* slider = &mtouch_slider[sliderName];
+[v _slider `*S358 ~T0 @X0 1 a ]
+[e = _slider &U *U + &U _mtouch_slider * -> _sliderName `ux -> -> # *U &U _mtouch_slider `ui `ux ]
+"802
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 802:         slider->sliderStatus = MTOUCH_SLIDER_STATE_initializing;
+[e = . *U _slider 12 -> . `E2990 0 `uc ]
+"804
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 804:         slider->rightHysteresis = 0u;
+[e = . *U _slider 7 -> -> 0 `ui `uc ]
+"805
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 805:         slider->leftHysteresis = slider->positionHysteresis;
+[e = . *U _slider 8 . *U _slider 5 ]
+"807
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 807:         slider->rawPosition = 0u;
+[e = . *U _slider 9 -> -> 0 `ui `us ]
+"808
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 808:         slider->sliderPosition = 0u;
+[e = . *U _slider 10 -> -> 0 `ui `us ]
+"809
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 809:         slider->contactSize = 0u;
+[e = . *U _slider 11 -> -> 0 `ui `us ]
+"810
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 810:     }
+}
+[e :U 452 ]
+"811
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 811: }
+[e :UE 451 ]
+}
+"818
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 818: uint8_t MTOUCH_Slider_GroupStatus_Get(void)
+[v _MTOUCH_Slider_GroupStatus_Get `(uc ~T0 @X0 1 ef ]
+"819
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 819: {
+{
+[e :U _MTOUCH_Slider_GroupStatus_Get ]
+[f ]
+"820
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 820:     return sliderGroupStatus;
+[e ) _sliderGroupStatus ]
+[e $UE 453  ]
+"821
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 821: }
+[e :UE 453 ]
+}
+"828
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 828: _Bool MTOUCH_Slider_isInitialized(enum mtouch_slider_names sliderName)
+[v _MTOUCH_Slider_isInitialized `(a ~T0 @X0 1 ef1`E2914 ]
+"829
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 829: {
+{
+[e :U _MTOUCH_Slider_isInitialized ]
+"828
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 828: _Bool MTOUCH_Slider_isInitialized(enum mtouch_slider_names sliderName)
+[v _sliderName `E2914 ~T0 @X0 1 r1 ]
+"829
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 829: {
+[f ]
+"830
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 830:     if (sliderName < 1u)
+[e $ ! < -> _sliderName `ui -> 1 `ui 455  ]
+"831
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 831:     {
+{
+"832
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 832:         return ((mtouch_slider[sliderName].sliderStatus & (uint8_t)((uint8_t)3u<<0u)) == MTOUCH_SLIDER_STATE_initializing) ? 0 : 1;
+[e ) -> ? == & -> . *U + &U _mtouch_slider * -> _sliderName `ux -> -> # *U &U _mtouch_slider `ui `ux 12 `i -> -> << -> -> -> 3 `ui `uc `i -> 0 `ui `uc `i -> . `E2990 0 `i : -> 0 `i -> 1 `i `a ]
+[e $UE 454  ]
+"833
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 833:     }
+}
+[e $U 456  ]
+"834
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 834:     else
+[e :U 455 ]
+"835
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 835:         return 0;
+[e ) -> -> 0 `i `a ]
+[e $UE 454  ]
+[e :U 456 ]
+"836
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 836: }
+[e :UE 454 ]
+}
+"843
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 843: _Bool MTOUCH_Slider_isPressed(enum mtouch_slider_names sliderName)
+[v _MTOUCH_Slider_isPressed `(a ~T0 @X0 1 ef1`E2914 ]
+"844
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 844: {
+{
+[e :U _MTOUCH_Slider_isPressed ]
+"843
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 843: _Bool MTOUCH_Slider_isPressed(enum mtouch_slider_names sliderName)
+[v _sliderName `E2914 ~T0 @X0 1 r1 ]
+"844
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 844: {
+[f ]
+"845
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 845:     if (sliderName < 1u)
+[e $ ! < -> _sliderName `ui -> 1 `ui 458  ]
+"846
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 846:     {
+{
+"847
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 847:         return ((mtouch_slider[sliderName].sliderStatus & (uint8_t)((uint8_t)3u<<0u)) == MTOUCH_SLIDER_STATE_pressed) ? 1 : 0;
+[e ) -> ? == & -> . *U + &U _mtouch_slider * -> _sliderName `ux -> -> # *U &U _mtouch_slider `ui `ux 12 `i -> -> << -> -> -> 3 `ui `uc `i -> 0 `ui `uc `i -> . `E2990 2 `i : -> 1 `i -> 0 `i `a ]
+[e $UE 457  ]
+"848
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 848:     }
+}
+[e $U 459  ]
+"849
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 849:     else
+[e :U 458 ]
+"850
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 850:         return 0;
+[e ) -> -> 0 `i `a ]
+[e $UE 457  ]
+[e :U 459 ]
+"851
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 851: }
+[e :UE 457 ]
+}
+"858
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 858: _Bool MTOUCH_Slider_isReburstRequest(enum mtouch_slider_names sliderName)
+[v _MTOUCH_Slider_isReburstRequest `(a ~T0 @X0 1 ef1`E2914 ]
+"859
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 859: {
+{
+[e :U _MTOUCH_Slider_isReburstRequest ]
+"858
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 858: _Bool MTOUCH_Slider_isReburstRequest(enum mtouch_slider_names sliderName)
+[v _sliderName `E2914 ~T0 @X0 1 r1 ]
+"859
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 859: {
+[f ]
+"860
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 860:     if (sliderName < 1u)
+[e $ ! < -> _sliderName `ui -> 1 `ui 461  ]
+"861
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 861:     {
+{
+"862
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 862:         return (mtouch_slider[sliderName].sliderStatus & (uint8_t)((uint8_t)1u<<7u)) ? 1 : 0;
+[e ) -> ? != & -> . *U + &U _mtouch_slider * -> _sliderName `ux -> -> # *U &U _mtouch_slider `ui `ux 12 `i -> -> << -> -> -> 1 `ui `uc `i -> 7 `ui `uc `i -> 0 `i : -> 1 `i -> 0 `i `a ]
+[e $UE 460  ]
+"863
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 863:     }
+}
+[e $U 462  ]
+"864
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 864:     else
+[e :U 461 ]
+"865
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 865:         return 0;
+[e ) -> -> 0 `i `a ]
+[e $UE 460  ]
+[e :U 462 ]
+"866
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 866: }
+[e :UE 460 ]
+}
+"873
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 873: _Bool MTOUCH_Slider_isPositionChanged(enum mtouch_slider_names sliderName)
+[v _MTOUCH_Slider_isPositionChanged `(a ~T0 @X0 1 ef1`E2914 ]
+"874
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 874: {
+{
+[e :U _MTOUCH_Slider_isPositionChanged ]
+"873
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 873: _Bool MTOUCH_Slider_isPositionChanged(enum mtouch_slider_names sliderName)
+[v _sliderName `E2914 ~T0 @X0 1 r1 ]
+"874
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 874: {
+[f ]
+"875
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 875:     if (sliderName < 1u)
+[e $ ! < -> _sliderName `ui -> 1 `ui 464  ]
+"876
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 876:     {
+{
+"877
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 877:         return (mtouch_slider[sliderName].sliderStatus & (uint8_t)((uint8_t)1u<<2u)) ? 1 : 0;
+[e ) -> ? != & -> . *U + &U _mtouch_slider * -> _sliderName `ux -> -> # *U &U _mtouch_slider `ui `ux 12 `i -> -> << -> -> -> 1 `ui `uc `i -> 2 `ui `uc `i -> 0 `i : -> 1 `i -> 0 `i `a ]
+[e $UE 463  ]
+"878
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 878:     }
+}
+[e $U 465  ]
+"879
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 879:     else
+[e :U 464 ]
+"880
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 880:         return 0;
+[e ) -> -> 0 `i `a ]
+[e $UE 463  ]
+[e :U 465 ]
+"881
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 881: }
+[e :UE 463 ]
+}
+"889
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 889: uint8_t MTOUCH_Slider_Status_Get(enum mtouch_slider_names sliderName)
+[v _MTOUCH_Slider_Status_Get `(uc ~T0 @X0 1 ef1`E2914 ]
+"890
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 890: {
+{
+[e :U _MTOUCH_Slider_Status_Get ]
+"889
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 889: uint8_t MTOUCH_Slider_Status_Get(enum mtouch_slider_names sliderName)
+[v _sliderName `E2914 ~T0 @X0 1 r1 ]
+"890
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 890: {
+[f ]
+"891
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 891:     if (sliderName < 1u)
+[e $ ! < -> _sliderName `ui -> 1 `ui 467  ]
+"892
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 892:     {
+{
+"893
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 893:         return (mtouch_slider[sliderName].sliderStatus);
+[e ) . *U + &U _mtouch_slider * -> _sliderName `ux -> -> # *U &U _mtouch_slider `ui `ux 12 ]
+[e $UE 466  ]
+"894
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 894:     }
+}
+[e $U 468  ]
+"895
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 895:     else
+[e :U 467 ]
+"896
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 896:         return 0u;
+[e ) -> -> 0 `ui `uc ]
+[e $UE 466  ]
+[e :U 468 ]
+"897
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 897: }
+[e :UE 466 ]
+}
+"904
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 904: uint16_t MTOUCH_Slider_Position_Get(enum mtouch_slider_names sliderName)
+[v _MTOUCH_Slider_Position_Get `(us ~T0 @X0 1 ef1`E2914 ]
+"905
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 905: {
+{
+[e :U _MTOUCH_Slider_Position_Get ]
+"904
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 904: uint16_t MTOUCH_Slider_Position_Get(enum mtouch_slider_names sliderName)
+[v _sliderName `E2914 ~T0 @X0 1 r1 ]
+"905
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 905: {
+[f ]
+"906
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 906:     if (sliderName < 1u)
+[e $ ! < -> _sliderName `ui -> 1 `ui 470  ]
+"907
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 907:     {
+{
+"908
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 908:         return (mtouch_slider[sliderName].sliderPosition);
+[e ) . *U + &U _mtouch_slider * -> _sliderName `ux -> -> # *U &U _mtouch_slider `ui `ux 10 ]
+[e $UE 469  ]
+"909
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 909:     }
+}
+[e $U 471  ]
+"910
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 910:     else
+[e :U 470 ]
+"911
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 911:         return 0u;
+[e ) -> -> 0 `ui `us ]
+[e $UE 469  ]
+[e :U 471 ]
+"912
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 912: }
+[e :UE 469 ]
+}
+"919
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 919: uint16_t MTOUCH_Slider_Threshold_Get(enum mtouch_slider_names sliderName)
+[v _MTOUCH_Slider_Threshold_Get `(us ~T0 @X0 1 ef1`E2914 ]
+"920
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 920: {
+{
+[e :U _MTOUCH_Slider_Threshold_Get ]
+"919
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 919: uint16_t MTOUCH_Slider_Threshold_Get(enum mtouch_slider_names sliderName)
+[v _sliderName `E2914 ~T0 @X0 1 r1 ]
+"920
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 920: {
+[f ]
+"921
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 921:     if (sliderName < 1u)
+[e $ ! < -> _sliderName `ui -> 1 `ui 473  ]
+"922
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 922:     {
+{
+"923
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 923:         return (mtouch_slider[sliderName].contactThreshold);
+[e ) . *U + &U _mtouch_slider * -> _sliderName `ux -> -> # *U &U _mtouch_slider `ui `ux 6 ]
+[e $UE 472  ]
+"924
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 924:     }
+}
+[e $U 474  ]
+"925
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 925:     else
+[e :U 473 ]
+"926
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 926:         return 0u;
+[e ) -> -> 0 `ui `us ]
+[e $UE 472  ]
+[e :U 474 ]
+"927
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 927: }
+[e :UE 472 ]
+}
+"934
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 934: uint8_t MTOUCH_Slider_Threshold_Set(enum mtouch_slider_names sliderName, uint16_t threshold)
+[v _MTOUCH_Slider_Threshold_Set `(uc ~T0 @X0 1 ef2`E2914`us ]
+"935
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 935: {
+{
+[e :U _MTOUCH_Slider_Threshold_Set ]
+"934
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 934: uint8_t MTOUCH_Slider_Threshold_Set(enum mtouch_slider_names sliderName, uint16_t threshold)
+[v _sliderName `E2914 ~T0 @X0 1 r1 ]
+[v _threshold `us ~T0 @X0 1 r2 ]
+"935
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 935: {
+[f ]
+"936
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 936:     if (sliderName < 1u)
+[e $ ! < -> _sliderName `ui -> 1 `ui 476  ]
+"937
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 937:     {
+{
+"938
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 938:         mtouch_slider[sliderName].contactThreshold = threshold;
+[e = . *U + &U _mtouch_slider * -> _sliderName `ux -> -> # *U &U _mtouch_slider `ui `ux 6 _threshold ]
+"939
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 939:         return 1u;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 475  ]
+"940
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 940:     }
+}
+[e $U 477  ]
+"941
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 941:     else
+[e :U 476 ]
+"942
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 942:         return 0u;
+[e ) -> -> 0 `ui `uc ]
+[e $UE 475  ]
+[e :U 477 ]
+"943
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 943: }
+[e :UE 475 ]
+}
+"950
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 950: uint16_t MTOUCH_Slider_Deviation_Get(enum mtouch_slider_names sliderName)
+[v _MTOUCH_Slider_Deviation_Get `(us ~T0 @X0 1 ef1`E2914 ]
+"951
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 951: {
+{
+[e :U _MTOUCH_Slider_Deviation_Get ]
+"950
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 950: uint16_t MTOUCH_Slider_Deviation_Get(enum mtouch_slider_names sliderName)
+[v _sliderName `E2914 ~T0 @X0 1 r1 ]
+"951
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 951: {
+[f ]
+"952
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 952:     if (sliderName < 1u)
+[e $ ! < -> _sliderName `ui -> 1 `ui 479  ]
+"953
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 953:     {
+{
+"954
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 954:         return (mtouch_slider[sliderName].contactSize);
+[e ) . *U + &U _mtouch_slider * -> _sliderName `ux -> -> # *U &U _mtouch_slider `ui `ux 11 ]
+[e $UE 478  ]
+"955
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 955:     }
+}
+[e $U 480  ]
+"956
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 956:     else
+[e :U 479 ]
+"957
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 957:         return 0u;
+[e ) -> -> 0 `ui `us ]
+[e $UE 478  ]
+[e :U 480 ]
+"958
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 958: }
+[e :UE 478 ]
+}
+"965
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 965: void MTOUCH_Slider_InitializeAll(void)
+[v _MTOUCH_Slider_InitializeAll `(v ~T0 @X0 1 ef ]
+"966
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 966: {
+{
+[e :U _MTOUCH_Slider_InitializeAll ]
+[f ]
+"967
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 967:     enum mtouch_slider_names slider;
+[v _slider `E2914 ~T0 @X0 1 a ]
+"969
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 969:     for (slider = 0u; slider < 1u; slider++)
+{
+[e = _slider -> -> 0 `ui `E2914 ]
+[e $ < -> _slider `ui -> 1 `ui 482  ]
+[e $U 483  ]
+[e :U 482 ]
+"970
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 970:     {
+{
+"971
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 971:         Slider_Initialize(slider);
+[e ( _Slider_Initialize (1 _slider ]
+"972
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 972:     }
+}
+[e ++ _slider -> -> 1 `i `E2914 ]
+[e $ < -> _slider `ui -> 1 `ui 482  ]
+[e :U 483 ]
+}
+"973
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 973: }
+[e :UE 481 ]
+}
+"980
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 980: void MTOUCH_Slider_ServiceAll(void)
+[v _MTOUCH_Slider_ServiceAll `(v ~T0 @X0 1 ef ]
+"981
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 981: {
+{
+[e :U _MTOUCH_Slider_ServiceAll ]
+[f ]
+"982
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 982:     enum mtouch_slider_names slider;
+[v _slider `E2914 ~T0 @X0 1 a ]
+"985
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 985:     sliderGroupStatus = 0u;
+[e = _sliderGroupStatus -> -> 0 `ui `uc ]
+"987
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 987:     for (slider = 0u; slider < 1u; slider++)
+{
+[e = _slider -> -> 0 `ui `E2914 ]
+[e $ < -> _slider `ui -> 1 `ui 486  ]
+[e $U 487  ]
+[e :U 486 ]
+"988
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 988:     {
+{
+"989
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 989:         Slider_Service(slider);
+[e ( _Slider_Service (1 _slider ]
+"990
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 990:     }
+}
+[e ++ _slider -> -> 1 `i `E2914 ]
+[e $ < -> _slider `ui -> 1 `ui 486  ]
+[e :U 487 ]
+}
+"991
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 991: }
+[e :UE 485 ]
+}
+"998
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 998: _Bool MTOUCH_Slider_Reburst_Service(void)
+[v _MTOUCH_Slider_Reburst_Service `(a ~T0 @X0 1 ef ]
+"999
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 999: {
+{
+[e :U _MTOUCH_Slider_Reburst_Service ]
+[f ]
+"1000
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1000:     enum mtouch_slider_names sliderName;
+[v _sliderName `E2914 ~T0 @X0 1 a ]
+"1001
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1001:     for(sliderName = 0;sliderName < 1u;sliderName++)
+{
+[e = _sliderName -> -> 0 `i `E2914 ]
+[e $ < -> _sliderName `ui -> 1 `ui 490  ]
+[e $U 491  ]
+[e :U 490 ]
+"1002
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1002:     {
+{
+"1003
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1003:         if(MTOUCH_Slider_isReburstRequest(sliderName))
+[e $ ! != -> ( _MTOUCH_Slider_isReburstRequest (1 _sliderName `i -> 0 `i 493  ]
+"1004
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1004:         {
+{
+"1005
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1005:             MTOUCH_Button_Reburst_Request(mtouch_slider[sliderName].startSegment);
+[e ( _MTOUCH_Button_Reburst_Request (1 -> . *U + &U _mtouch_slider * -> _sliderName `ux -> -> # *U &U _mtouch_slider `ui `ux 2 `E2801 ]
+"1006
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1006:         }
+}
+[e :U 493 ]
+"1007
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1007:     }
+}
+[e ++ _sliderName -> -> 1 `i `E2914 ]
+[e $ < -> _sliderName `ui -> 1 `ui 490  ]
+[e :U 491 ]
+}
+"1008
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1008:     return sliderGroupStatus & (uint8_t)((uint8_t)1u<<7u);
+[e ) -> & -> _sliderGroupStatus `i -> -> << -> -> -> 1 `ui `uc `i -> 7 `ui `uc `i `a ]
+[e $UE 489  ]
+"1009
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1009: }
+[e :UE 489 ]
+}
+"1016
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1016: static void Slider_DefaultCallback(enum mtouch_slider_names slider) { }
+[v _Slider_DefaultCallback `(v ~T0 @X0 1 sf1`E2914 ]
+{
+[e :U _Slider_DefaultCallback ]
+[v _slider `E2914 ~T0 @X0 1 r1 ]
+[f ]
+[e :UE 494 ]
+}
+"1017
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1017: void MTOUCH_Slider_SetPositionChangedCallback(void (*callback)(enum mtouch_slider_names))
+[v _MTOUCH_Slider_SetPositionChangedCallback `(v ~T0 @X0 1 ef1`*F3166 ]
+"1018
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1018: {
+{
+[e :U _MTOUCH_Slider_SetPositionChangedCallback ]
+"1017
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1017: void MTOUCH_Slider_SetPositionChangedCallback(void (*callback)(enum mtouch_slider_names))
+[v _callback `*F3169 ~T0 @X0 1 r1 ]
+"1018
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1018: {
+[f ]
+"1019
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1019:     callback_position_changed = callback;
+[e = _callback_position_changed _callback ]
+"1020
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1020: }
+[e :UE 495 ]
+}
+"1022
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1022: void MTOUCH_Slider_SetPressedCallback(void (*callback)(enum mtouch_slider_names))
+[v _MTOUCH_Slider_SetPressedCallback `(v ~T0 @X0 1 ef1`*F3174 ]
+"1023
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1023: {
+{
+[e :U _MTOUCH_Slider_SetPressedCallback ]
+"1022
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1022: void MTOUCH_Slider_SetPressedCallback(void (*callback)(enum mtouch_slider_names))
+[v _callback `*F3177 ~T0 @X0 1 r1 ]
+"1023
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1023: {
+[f ]
+"1024
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1024:     callback_pressed = callback;
+[e = _callback_pressed _callback ]
+"1025
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1025: }
+[e :UE 496 ]
+}
+"1027
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1027: void MTOUCH_Slider_SetReleasedCallback(void (*callback)(enum mtouch_slider_names))
+[v _MTOUCH_Slider_SetReleasedCallback `(v ~T0 @X0 1 ef1`*F3182 ]
+"1028
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1028: {
+{
+[e :U _MTOUCH_Slider_SetReleasedCallback ]
+"1027
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1027: void MTOUCH_Slider_SetReleasedCallback(void (*callback)(enum mtouch_slider_names))
+[v _callback `*F3185 ~T0 @X0 1 r1 ]
+"1028
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1028: {
+[f ]
+"1029
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1029:     callback_released = callback;
+[e = _callback_released _callback ]
+"1030
+[; ;mcc_generated_files/mtouch/mtouch_slider.c: 1030: }
+[e :UE 497 ]
+}

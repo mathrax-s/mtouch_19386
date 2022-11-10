@@ -1,0 +1,1744 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1938 ]
+[d frameptr 6 ]
+"100 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_button.c
+[e E2936 mtouch_button_names `uc
+Slider1_Seg0 0
+Slider1_Seg1 1
+Slider1_Seg2 2
+Slider1_Seg3 3
+Slider1_Seg4 4
+]
+[e E2873 mtouch_sensor_names `uc
+Sensor_AN12 0
+Sensor_AN10 1
+Sensor_AN8 2
+Sensor_AN9 3
+Sensor_AN11 4
+Sensor_AN13 5
+Sensor_AN4 6
+Sensor_AN3 7
+Sensor_AN2 8
+Sensor_AN1 9
+Sensor_AN0 10
+]
+[e E3157 mtouch_button_state `uc
+MTOUCH_BUTTON_STATE_initializing 0
+MTOUCH_BUTTON_STATE_notPressed 1
+MTOUCH_BUTTON_STATE_pressDebounce 2
+MTOUCH_BUTTON_STATE_pressed 3
+MTOUCH_BUTTON_STATE_releaseDebounce 4
+MTOUCH_BUTTON_STATE_suspended 5
+MTOUCH_BUTTON_STATE_disabled 6
+]
+[e E3165 mtouch_button_aks_group `uc
+No_AKS_Group 0
+AKS_Group_1 1
+AKS_Group_2 2
+AKS_Group_3 3
+AKS_Group_4 4
+AKS_Group_5 5
+AKS_Group_6 6
+AKS_Group_7 7
+Max_AKS_Group 8
+]
+"353
+[e E3175 mtouch_button_hysteresis_thresholds `uc
+HYST_50_PERCENT 1
+HYST_25_PERCENT 2
+HYST_12_5_PERCENT 3
+HYST_6_25_PERCENT 4
+HYST_MAX 5
+]
+"66 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_api_example.c
+[e E99 mtouch_button_names `uc
+Slider1_Seg0 0
+Slider1_Seg1 1
+Slider1_Seg2 2
+Slider1_Seg3 3
+Slider1_Seg4 4
+]
+"80
+[e E2908 mtouch_slider_names `uc
+Slider1 0
+]
+"113 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_sensor.c
+[e E2707 mtouch_sensor_names `uc
+Sensor_AN12 0
+Sensor_AN10 1
+Sensor_AN8 2
+Sensor_AN9 3
+Sensor_AN11 4
+Sensor_AN13 5
+Sensor_AN4 6
+Sensor_AN3 7
+Sensor_AN2 8
+Sensor_AN1 9
+Sensor_AN0 10
+]
+"152
+[e E2719 mtouch_sensor_error `c
+MTOUCH_SENSOR_ERROR_none 0
+MTOUCH_SENSOR_ERROR_invalid_index -1
+MTOUCH_SENSOR_ERROR_interrupt_notEnabled -2
+MTOUCH_SENSOR_ERROR_invalid_calibrate -3
+MTOUCH_SENSOR_ERROR_tooManyRetries -4
+MTOUCH_SENSOR_ERROR_scanOverrun -5
+MTOUCH_SENSOR_ERROR_interruptedScan -6
+]
+"103 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_slider.c
+[e E2914 mtouch_slider_names `uc
+Slider1 0
+]
+[e E2911 mtouch_slider_type `uc
+MTOUCH_TYPE_SLIDER 0
+MTOUCH_TYPE_WHEEL 1
+]
+[e E2738 mtouch_sensor_names `uc
+Sensor_AN12 0
+Sensor_AN10 1
+Sensor_AN8 2
+Sensor_AN9 3
+Sensor_AN11 4
+Sensor_AN13 5
+Sensor_AN4 6
+Sensor_AN3 7
+Sensor_AN2 8
+Sensor_AN1 9
+Sensor_AN0 10
+]
+[e E2801 mtouch_button_names `uc
+Slider1_Seg0 0
+Slider1_Seg1 1
+Slider1_Seg2 2
+Slider1_Seg3 3
+Slider1_Seg4 4
+]
+"666
+[e E2990 mtouch_slider_state `uc
+MTOUCH_SLIDER_STATE_initializing 0
+MTOUCH_SLIDER_STATE_notPressed 1
+MTOUCH_SLIDER_STATE_pressed 2
+]
+"92 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/main.c
+[e E2872 mtouch_slider_names `uc
+Slider1 0
+]
+"1 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"43 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"4 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 1 0 ]
+"10 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"8 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 /Applications/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"54 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/main.c
+[v _main main `(v  1 e 1 0 ]
+"38 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/delay.c
+[v _DELAY_milliseconds DELAY_milliseconds `(v  1 e 1 0 ]
+"66 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"132
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+"144
+[v _EUSART_DefaultFramingErrorHandler EUSART_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"146
+[v _EUSART_DefaultOverrunErrorHandler EUSART_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"154
+[v _EUSART_DefaultErrorHandler EUSART_DefaultErrorHandler `(v  1 e 1 0 ]
+"157
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+"161
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"165
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+"52 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"50 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"61
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"71
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"72 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch.c
+[v _MTOUCH_ScanScheduler MTOUCH_ScanScheduler `(v  1 s 1 MTOUCH_ScanScheduler ]
+"101
+[v _MTOUCH_Initialize MTOUCH_Initialize `(v  1 e 1 0 ]
+"118
+[v _MTOUCH_Service_Mainloop MTOUCH_Service_Mainloop `(a  1 e 1 0 ]
+"151
+[v _MTOUCH_Tick MTOUCH_Tick `(v  1 e 1 0 ]
+"161
+[v _MTOUCH_needReburst MTOUCH_needReburst `(a  1 s 1 MTOUCH_needReburst ]
+"211 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_Initialize MTOUCH_Button_Initialize `(v  1 e 1 0 ]
+"223
+[v _MTOUCH_Button_InitializeAll MTOUCH_Button_InitializeAll `(v  1 e 1 0 ]
+"241
+[v _MTOUCH_Button_ServiceAll MTOUCH_Button_ServiceAll `(v  1 e 1 0 ]
+"253
+[v _Button_Service Button_Service `(v  1 s 1 Button_Service ]
+"270
+[v _Button_State_Initializing Button_State_Initializing `(v  1 s 1 Button_State_Initializing ]
+"291
+[v _Button_State_NotPressed Button_State_NotPressed `(v  1 s 1 Button_State_NotPressed ]
+"343
+[v _Button_State_Pressed Button_State_Pressed `(v  1 s 1 Button_State_Pressed ]
+"361
+[v _Button_State_PressDebounce Button_State_PressDebounce `(v  1 s 1 Button_State_PressDebounce ]
+"392
+[v _Button_State_ReleaseDebounce Button_State_ReleaseDebounce `(v  1 s 1 Button_State_ReleaseDebounce ]
+"412
+[v _Button_State_Suspended Button_State_Suspended `(v  1 s 1 Button_State_Suspended ]
+"421
+[v _Button_State_Disabled Button_State_Disabled `(v  1 s 1 Button_State_Disabled ]
+"428
+[v _MTOUCH_Button_Tick MTOUCH_Button_Tick `(v  1 e 1 0 ]
+"436
+[v _Button_Tick_helper Button_Tick_helper `(v  1 s 1 Button_Tick_helper ]
+"515
+[v _MTOUCH_Button_isPressed MTOUCH_Button_isPressed `(a  1 e 1 0 ]
+"580
+[v _MTOUCH_Button_Deviation_Get MTOUCH_Button_Deviation_Get `(c  1 e 1 0 ]
+"588
+[v _Button_Deviation_Update Button_Deviation_Update `(v  1 s 1 Button_Deviation_Update ]
+"610
+[v _Button_Unscaled_Deviation_Get Button_Unscaled_Deviation_Get `(us  1 s 2 Button_Unscaled_Deviation_Get ]
+"641
+[v _Button_Reading_Update Button_Reading_Update `(v  1 s 1 Button_Reading_Update ]
+"655
+[v _Button_Reading_Update_Helper Button_Reading_Update_Helper `(v  1 s 1 Button_Reading_Update_Helper ]
+"668
+[v _Button_Baseline_Initialize Button_Baseline_Initialize `(v  1 s 1 Button_Baseline_Initialize ]
+"674
+[v _Button_Baseline_Update Button_Baseline_Update `(v  1 s 1 Button_Baseline_Update ]
+"698
+[v _Button_Baseline_Get_helper Button_Baseline_Get_helper `(us  1 s 2 Button_Baseline_Get_helper ]
+"717
+[v _Button_Check_AKS_Block Button_Check_AKS_Block `(a  1 s 1 Button_Check_AKS_Block ]
+"759
+[v _Button_Reburst_Request Button_Reburst_Request `T(v  1 s 1 Button_Reburst_Request ]
+"764
+[v _Button_Reburst_Clear Button_Reburst_Clear `T(v  1 s 1 Button_Reburst_Clear ]
+"769
+[v _MTOUCH_Button_Reburst_Request MTOUCH_Button_Reburst_Request `(v  1 e 1 0 ]
+"774
+[v _MTOUCH_Button_Reburst_Service MTOUCH_Button_Reburst_Service `(a  1 e 1 0 ]
+"786
+[v _Button_DefaultCallback Button_DefaultCallback `(v  1 s 1 Button_DefaultCallback ]
+"66 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_random.c
+[v _MTOUCH_Random MTOUCH_Random `(uc  1 e 1 0 ]
+"152 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_Initialize MTOUCH_Sensor_Initialize `(E2719  1 e 1 0 ]
+"166
+[v _MTOUCH_Sensor_InitializeAll MTOUCH_Sensor_InitializeAll `(v  1 e 1 0 ]
+"181
+[v _MTOUCH_Sensor_Scan_Initialize MTOUCH_Sensor_Scan_Initialize `(v  1 e 1 0 ]
+"196
+[v _MTOUCH_Sensor_SampleAll MTOUCH_Sensor_SampleAll `(a  1 e 1 0 ]
+"242
+[v _Sensor_Service Sensor_Service `(E2719  1 s 1 Sensor_Service ]
+"289
+[v _Sensor_Acquisition Sensor_Acquisition `(E2719  1 s 1 Sensor_Acquisition ]
+"324
+[v _Sensor_Acq_ExecutePacket Sensor_Acq_ExecutePacket `(E2719  1 s 1 Sensor_Acq_ExecutePacket ]
+"372
+[v _MTOUCH_Delay MTOUCH_Delay `(v  1 s 1 MTOUCH_Delay ]
+"388
+[v _Sensor_Acq_ExecuteScan Sensor_Acq_ExecuteScan `(v  1 s 1 Sensor_Acq_ExecuteScan ]
+"429
+[v _MTOUCH_Sensor_RawSample_Get MTOUCH_Sensor_RawSample_Get `(us  1 e 2 0 ]
+"439
+[v _Sensor_RawSample_Update Sensor_RawSample_Update `(v  1 s 1 Sensor_RawSample_Update ]
+"459
+[v _Sensor_DefaultCallback Sensor_DefaultCallback `(v  1 s 1 Sensor_DefaultCallback ]
+"471
+[v _Sensor_setScanFunction Sensor_setScanFunction `(v  1 s 1 Sensor_setScanFunction ]
+"484
+[v _MTOUCH_Sensor_Disable MTOUCH_Sensor_Disable `(v  1 e 1 0 ]
+"490
+[v _MTOUCH_Sensor_Enable MTOUCH_Sensor_Enable `(v  1 e 1 0 ]
+"496
+[v _MTOUCH_Sensor_isEnabled MTOUCH_Sensor_isEnabled `(a  1 e 1 0 ]
+"504
+[v _Sensor_isEnabled Sensor_isEnabled `(a  1 s 1 Sensor_isEnabled ]
+"519
+[v _Sensor_setActive Sensor_setActive `T(v  1 s 1 Sensor_setActive ]
+"524
+[v _Sensor_setInactive Sensor_setInactive `T(v  1 s 1 Sensor_setInactive ]
+"538
+[v _MTOUCH_Sensor_isCalibrated MTOUCH_Sensor_isCalibrated `(a  1 e 1 0 ]
+"544
+[v _MTOUCH_Sensor_Calibrate MTOUCH_Sensor_Calibrate `(v  1 e 1 0 ]
+"556
+[v _MTOUCH_Sensor_Sampled_ResetAll MTOUCH_Sensor_Sampled_ResetAll `(v  1 e 1 0 ]
+"565
+[v _MTOUCH_Sensor_wasSampled MTOUCH_Sensor_wasSampled `(a  1 e 1 0 ]
+"573
+[v _Sensor_Sampled_Reset Sensor_Sampled_Reset `T(v  1 s 1 Sensor_Sampled_Reset ]
+"578
+[v _Sensor_setSampled Sensor_setSampled `T(v  1 s 1 Sensor_setSampled ]
+"583
+[v _MTOUCH_Sensor_Oversampling_Get MTOUCH_Sensor_Oversampling_Get `(uc  1 e 1 0 ]
+"591
+[v _MTOUCH_Sensor_Oversampling_Set MTOUCH_Sensor_Oversampling_Set `(v  1 e 1 0 ]
+"50 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_sensor_scan.c
+[v _MTOUCH_CVD_ScanA_0 MTOUCH_CVD_ScanA_0 `(v  1 e 1 0 ]
+"113
+[v _MTOUCH_CVD_ScanB_0 MTOUCH_CVD_ScanB_0 `(v  1 e 1 0 ]
+"177
+[v _MTOUCH_CVD_ScanA_1 MTOUCH_CVD_ScanA_1 `(v  1 e 1 0 ]
+"240
+[v _MTOUCH_CVD_ScanB_1 MTOUCH_CVD_ScanB_1 `(v  1 e 1 0 ]
+"304
+[v _MTOUCH_CVD_ScanA_2 MTOUCH_CVD_ScanA_2 `(v  1 e 1 0 ]
+"367
+[v _MTOUCH_CVD_ScanB_2 MTOUCH_CVD_ScanB_2 `(v  1 e 1 0 ]
+"431
+[v _MTOUCH_CVD_ScanA_3 MTOUCH_CVD_ScanA_3 `(v  1 e 1 0 ]
+"494
+[v _MTOUCH_CVD_ScanB_3 MTOUCH_CVD_ScanB_3 `(v  1 e 1 0 ]
+"558
+[v _MTOUCH_CVD_ScanA_4 MTOUCH_CVD_ScanA_4 `(v  1 e 1 0 ]
+"621
+[v _MTOUCH_CVD_ScanB_4 MTOUCH_CVD_ScanB_4 `(v  1 e 1 0 ]
+"685
+[v _MTOUCH_CVD_ScanA_5 MTOUCH_CVD_ScanA_5 `(v  1 e 1 0 ]
+"748
+[v _MTOUCH_CVD_ScanB_5 MTOUCH_CVD_ScanB_5 `(v  1 e 1 0 ]
+"812
+[v _MTOUCH_CVD_ScanA_6 MTOUCH_CVD_ScanA_6 `(v  1 e 1 0 ]
+"875
+[v _MTOUCH_CVD_ScanB_6 MTOUCH_CVD_ScanB_6 `(v  1 e 1 0 ]
+"939
+[v _MTOUCH_CVD_ScanA_7 MTOUCH_CVD_ScanA_7 `(v  1 e 1 0 ]
+"1002
+[v _MTOUCH_CVD_ScanB_7 MTOUCH_CVD_ScanB_7 `(v  1 e 1 0 ]
+"1066
+[v _MTOUCH_CVD_ScanA_8 MTOUCH_CVD_ScanA_8 `(v  1 e 1 0 ]
+"1129
+[v _MTOUCH_CVD_ScanB_8 MTOUCH_CVD_ScanB_8 `(v  1 e 1 0 ]
+"1193
+[v _MTOUCH_CVD_ScanA_9 MTOUCH_CVD_ScanA_9 `(v  1 e 1 0 ]
+"1256
+[v _MTOUCH_CVD_ScanB_9 MTOUCH_CVD_ScanB_9 `(v  1 e 1 0 ]
+"1320
+[v _MTOUCH_CVD_ScanA_10 MTOUCH_CVD_ScanA_10 `(v  1 e 1 0 ]
+"1383
+[v _MTOUCH_CVD_ScanB_10 MTOUCH_CVD_ScanB_10 `(v  1 e 1 0 ]
+"191 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_slider.c
+[v _divide divide `(us  1 s 2 divide ]
+"251
+[v _get_difference get_difference `(s  1 s 2 get_difference ]
+"289
+[v _positional_hysteresis positional_hysteresis `(us  1 s 2 positional_hysteresis ]
+"341
+[v _moving_average_filter moving_average_filter `(us  1 s 2 moving_average_filter ]
+"385
+[v _interpolate interpolate `(us  1 s 2 interpolate ]
+"408
+[v _Slider_FindMiddle Slider_FindMiddle `(s  1 s 2 Slider_FindMiddle ]
+"438
+[v _Slider_FindLeft Slider_FindLeft `(s  1 s 2 Slider_FindLeft ]
+"484
+[v _Slider_FindRight Slider_FindRight `(s  1 s 2 Slider_FindRight ]
+"522
+[v _calculate_raw_position calculate_raw_position `(us  1 s 2 calculate_raw_position ]
+"628
+[v _calculate_contact_size calculate_contact_size `(us  1 s 2 calculate_contact_size ]
+"658
+[v _calculate_position calculate_position `(us  1 s 2 calculate_position ]
+"690
+[v _Slider_Service Slider_Service `(v  1 s 1 Slider_Service ]
+"795
+[v _Slider_Initialize Slider_Initialize `(v  1 s 1 Slider_Initialize ]
+"843
+[v _MTOUCH_Slider_isPressed MTOUCH_Slider_isPressed `(a  1 e 1 0 ]
+"858
+[v _MTOUCH_Slider_isReburstRequest MTOUCH_Slider_isReburstRequest `(a  1 e 1 0 ]
+"873
+[v _MTOUCH_Slider_isPositionChanged MTOUCH_Slider_isPositionChanged `(a  1 e 1 0 ]
+"904
+[v _MTOUCH_Slider_Position_Get MTOUCH_Slider_Position_Get `(us  1 e 2 0 ]
+"965
+[v _MTOUCH_Slider_InitializeAll MTOUCH_Slider_InitializeAll `(v  1 e 1 0 ]
+"980
+[v _MTOUCH_Slider_ServiceAll MTOUCH_Slider_ServiceAll `(v  1 e 1 0 ]
+"998
+[v _MTOUCH_Slider_Reburst_Service MTOUCH_Slider_Reburst_Service `(a  1 e 1 0 ]
+"1016
+[v _Slider_DefaultCallback Slider_DefaultCallback `(v  1 s 1 Slider_DefaultCallback ]
+"55 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"64 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+"120
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+"157
+[v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
+"171
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
+"175
+[v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
+[s S814 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"375 /Applications/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1938.h
+[s S823 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S828 . 1 `S814 1 . 1 0 `S823 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES828  1 e 1 @11 ]
+[s S1609 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"654
+[u S1618 . 1 `S1609 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES1618  1 e 1 @17 ]
+"829
+[v _TMR1L TMR1L `VEuc  1 e 1 @22 ]
+"849
+[v _TMR1H TMR1H `VEuc  1 e 1 @23 ]
+"869
+[v _T1CON T1CON `VEuc  1 e 1 @24 ]
+[s S1846 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 TMR1CS0 1 0 :1:6 
+`uc 1 TMR1CS1 1 0 :1:7 
+]
+"891
+[s S1855 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1CS 1 0 :2:6 
+]
+[u S1859 . 1 `S1846 1 . 1 0 `S1855 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES1859  1 e 1 @24 ]
+"941
+[v _T1GCON T1GCON `VEuc  1 e 1 @25 ]
+"1229
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1291
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1353
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+"1415
+[v _TRISE TRISE `VEuc  1 e 1 @144 ]
+[s S1818 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1453
+[u S1827 . 1 `S1818 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES1827  1 e 1 @145 ]
+[s S1514 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1624
+[s S1523 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S1528 . 1 `S1514 1 . 1 0 `S1523 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES1528  1 e 1 @149 ]
+"1735
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1794
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1852
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1986
+[v _ADRES ADRES `VEus  1 e 2 @155 ]
+"2033
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S863 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+"2062
+[s S871 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+[s S875 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[s S878 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[u S881 . 1 `S863 1 . 1 0 `S871 1 . 1 0 `S875 1 . 1 0 `S878 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES881  1 e 1 @157 ]
+"2122
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"2194
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"2256
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+"2318
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+[s S1751 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"2335
+[u S1760 . 1 `S1751 1 . 1 0 ]
+[v _LATCbits LATCbits `VES1760  1 e 1 @270 ]
+"2380
+[v _LATE LATE `VEuc  1 e 1 @272 ]
+"2673
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"3022
+[v _APFCON APFCON `VEuc  1 e 1 @285 ]
+"3078
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"3136
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3408
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"3444
+[v _SPBRGL SPBRGL `VEuc  1 e 1 @411 ]
+"3494
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
+"3527
+[v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
+"3589
+[v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
+"3651
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @415 ]
+"3703
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"3773
+[v _WPUE WPUE `VEuc  1 e 1 @528 ]
+"7714
+[v _GIE GIE `VEb  1 e 0 @95 ]
+[s S1563 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"52 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/eusart.c
+[u S1568 . 1 `S1563 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxLastError eusartRxLastError `VES1568  1 e 1 0 ]
+"58
+[v _EUSART_FramingErrorHandler EUSART_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"59
+[v _EUSART_OverrunErrorHandler EUSART_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"60
+[v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
+"54 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch.c
+[v _mtouch_time_toScan mtouch_time_toScan `a  1 s 1 mtouch_time_toScan ]
+"55
+[v _mtouch_request_init mtouch_request_init `a  1 s 1 mtouch_request_init ]
+"56
+[v _mTouchScanReload mTouchScanReload `us  1 s 2 mTouchScanReload ]
+[s S134 . 17 `DCE2936 1 name 1 0 `DCE2873 1 sensor 1 1 `E3157 1 state 1 2 `E3165 1 aks_group 1 3 `us 1 reading 2 4 `ul 1 baseline 4 6 `c 1 deviation 1 10 `us 1 counter 2 11 `us 1 baseline_count 2 13 `uc 1 threshold 1 15 `uc 1 scaling 1 16 ]
+"100 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_button.c
+[v _mtouch_button_init mtouch_button_init `DC[5]S134  1 e 85 0 ]
+"149
+[v _mtouch_button mtouch_button `[5]S134  1 s 85 mtouch_button ]
+"151
+[v _button_reburst_request button_reburst_request `a  1 s 1 button_reburst_request ]
+"193
+[v _Button_StateMachine Button_StateMachine `[7]*.37(v  1 e 14 0 ]
+[s S709 . 1 `uc 1 packet_done 1 0 :1:0 
+`uc 1 interrupted 1 0 :1:1 
+]
+"120 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _sensor_globalFlags sensor_globalFlags `VES709  1 s 1 sensor_globalFlags ]
+"121
+[v _currentScannSensor currentScannSensor `E2707  1 s 1 currentScannSensor ]
+"122
+[v _packet_counter packet_counter `uc  1 s 1 packet_counter ]
+"123
+[v _packet_sample packet_sample `us  1 s 2 packet_sample ]
+"124
+[v _sample_delay sample_delay `uc  1 s 1 sample_delay ]
+"126
+[v _Sensor_scanA Sensor_scanA `*.37(v  1 s 2 Sensor_scanA ]
+"127
+[v _Sensor_scanB Sensor_scanB `*.37(v  1 s 2 Sensor_scanB ]
+[s S720 . 9 `DCE2707 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+]
+"133
+[v _mtouch_sensor mtouch_sensor `[11]S720  1 s 99 mtouch_sensor ]
+[s S1118 . 17 `DCE2914 1 slider 1 0 `DCE2911 1 type 1 1 `DCE2738 1 startSegment 1 2 `DCuc 1 segmentCount 1 3 `DCuc 1 resolDeadband 1 4 `DCuc 1 positionHysteresis 1 5 `us 1 contactThreshold 2 6 `uc 1 rightHysteresis 1 8 `uc 1 leftHysteresis 1 9 `us 1 rawPosition 2 10 `us 1 sliderPosition 2 12 `us 1 contactSize 2 14 `uc 1 sliderStatus 1 16 ]
+"103 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_slider.c
+[v _mtouch_slider mtouch_slider `[1]S1118  1 s 17 mtouch_slider ]
+"118
+[v _sliderGroupStatus sliderGroupStatus `uc  1 s 1 sliderGroupStatus ]
+"119
+[v _resol_value resol_value `us  1 s 2 resol_value ]
+"120
+[v _resol_bits resol_bits `uc  1 s 1 resol_bits ]
+"121
+[v _middle_node middle_node `uc  1 s 1 middle_node ]
+"122
+[v _wheel_sensor_middle_channel_zero wheel_sensor_middle_channel_zero `a  1 s 1 wheel_sensor_middle_channel_zero ]
+"123
+[v _left_signal left_signal `s  1 s 2 left_signal ]
+[v _right_signal right_signal `s  1 s 2 right_signal ]
+[v _middle_signal middle_signal `s  1 s 2 middle_signal ]
+"57 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/tmr1.c
+[v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
+"58
+[v _TMR1_InterruptHandler TMR1_InterruptHandler `*.37(v  1 e 2 0 ]
+"54 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"58
+[v main@ave_slider ave_slider `f  1 a 4 10 ]
+"57
+[v main@f_slider f_slider `f  1 a 4 6 ]
+"59
+[v main@map_slider map_slider `f  1 a 4 0 ]
+"55
+[v main@i i `i  1 a 2 14 ]
+"56
+[v main@sliderPostion sliderPostion `us  1 a 2 4 ]
+"109
+} 0
+"10 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 2 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 1 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 2 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 0 ]
+"44
+} 0
+"43 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 7 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 6 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 2 ]
+"70
+} 0
+"8 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S2305 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S2310 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S2313 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2305 1 fAsBytes 4 0 `S2310 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S2313  1 a 4 38 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 34 ]
+[s S2382 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S2385 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S2382 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S2385  1 a 2 42 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 33 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 32 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 31 ]
+"8
+[v ___flmul@b b `d  1 p 4 18 ]
+[v ___flmul@a a `d  1 p 4 22 ]
+"205
+} 0
+"4 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `ui  1 a 2 2 ]
+"5
+[v __Umul8_16@product product `ui  1 a 2 0 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 2 ]
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 4 ]
+"60
+} 0
+"8 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 12 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 5 ]
+"20
+[v ___fldiv@new_exp new_exp `i  1 a 2 10 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 17 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 16 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 9 ]
+"8
+[v ___fldiv@a a `d  1 p 4 2 ]
+[v ___fldiv@b b `d  1 p 4 6 ]
+"185
+} 0
+"10 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 63 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 62 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 61 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 60 ]
+"10
+[v ___fladd@b b `d  1 p 4 44 ]
+[v ___fladd@a a `d  1 p 4 48 ]
+"237
+} 0
+"50 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"59
+} 0
+"71
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"75
+} 0
+"64 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+{
+"91
+} 0
+"55 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"97
+} 0
+"61 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"69
+} 0
+"66 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"92
+} 0
+"161
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 2 ]
+"163
+} 0
+"157
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 2 ]
+"159
+} 0
+"165
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 2 ]
+"167
+} 0
+"843 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_slider.c
+[v _MTOUCH_Slider_isPressed MTOUCH_Slider_isPressed `(a  1 e 1 0 ]
+{
+[v MTOUCH_Slider_isPressed@sliderName sliderName `E2914  1 a 1 wreg ]
+[v MTOUCH_Slider_isPressed@sliderName sliderName `E2914  1 a 1 wreg ]
+"845
+[v MTOUCH_Slider_isPressed@sliderName sliderName `E2914  1 a 1 3 ]
+"851
+} 0
+"873
+[v _MTOUCH_Slider_isPositionChanged MTOUCH_Slider_isPositionChanged `(a  1 e 1 0 ]
+{
+[v MTOUCH_Slider_isPositionChanged@sliderName sliderName `E2914  1 a 1 wreg ]
+[v MTOUCH_Slider_isPositionChanged@sliderName sliderName `E2914  1 a 1 wreg ]
+"875
+[v MTOUCH_Slider_isPositionChanged@sliderName sliderName `E2914  1 a 1 2 ]
+"881
+} 0
+"904
+[v _MTOUCH_Slider_Position_Get MTOUCH_Slider_Position_Get `(us  1 e 2 0 ]
+{
+[v MTOUCH_Slider_Position_Get@sliderName sliderName `E2914  1 a 1 wreg ]
+[v MTOUCH_Slider_Position_Get@sliderName sliderName `E2914  1 a 1 wreg ]
+"906
+[v MTOUCH_Slider_Position_Get@sliderName sliderName `E2914  1 a 1 4 ]
+"912
+} 0
+"118 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch.c
+[v _MTOUCH_Service_Mainloop MTOUCH_Service_Mainloop `(a  1 e 1 0 ]
+{
+"144
+} 0
+"161
+[v _MTOUCH_needReburst MTOUCH_needReburst `(a  1 s 1 MTOUCH_needReburst ]
+{
+"163
+[v MTOUCH_needReburst@needReburst needReburst `a  1 a 1 8 ]
+"168
+} 0
+"998 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_slider.c
+[v _MTOUCH_Slider_Reburst_Service MTOUCH_Slider_Reburst_Service `(a  1 e 1 0 ]
+{
+"1000
+[v MTOUCH_Slider_Reburst_Service@sliderName sliderName `E2914  1 a 1 6 ]
+"1009
+} 0
+"858
+[v _MTOUCH_Slider_isReburstRequest MTOUCH_Slider_isReburstRequest `(a  1 e 1 0 ]
+{
+[v MTOUCH_Slider_isReburstRequest@sliderName sliderName `E2914  1 a 1 wreg ]
+[v MTOUCH_Slider_isReburstRequest@sliderName sliderName `E2914  1 a 1 wreg ]
+"860
+[v MTOUCH_Slider_isReburstRequest@sliderName sliderName `E2914  1 a 1 2 ]
+"866
+} 0
+"769 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_Reburst_Request MTOUCH_Button_Reburst_Request `(v  1 e 1 0 ]
+{
+[v MTOUCH_Button_Reburst_Request@button button `E2936  1 a 1 wreg ]
+[v MTOUCH_Button_Reburst_Request@button button `E2936  1 a 1 wreg ]
+"771
+[v MTOUCH_Button_Reburst_Request@button button `E2936  1 a 1 4 ]
+"772
+} 0
+"774
+[v _MTOUCH_Button_Reburst_Service MTOUCH_Button_Reburst_Service `(a  1 e 1 0 ]
+{
+"777
+} 0
+"151 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch.c
+[v _MTOUCH_Tick MTOUCH_Tick `(v  1 e 1 0 ]
+{
+"154
+} 0
+"428 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_Tick MTOUCH_Button_Tick `(v  1 e 1 0 ]
+{
+"430
+[v MTOUCH_Button_Tick@i i `uc  1 a 1 14 ]
+"435
+} 0
+"436
+[v _Button_Tick_helper Button_Tick_helper `(v  1 s 1 Button_Tick_helper ]
+{
+[s S134 . 17 `DCE2936 1 name 1 0 `DCE2873 1 sensor 1 1 `E3157 1 state 1 2 `E3165 1 aks_group 1 3 `us 1 reading 2 4 `ul 1 baseline 4 6 `c 1 deviation 1 10 `us 1 counter 2 11 `us 1 baseline_count 2 13 `uc 1 threshold 1 15 `uc 1 scaling 1 16 ]
+[v Button_Tick_helper@button button `*.39S134  1 p 2 4 ]
+"457
+} 0
+"980 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_slider.c
+[v _MTOUCH_Slider_ServiceAll MTOUCH_Slider_ServiceAll `(v  1 e 1 0 ]
+{
+"982
+[v MTOUCH_Slider_ServiceAll@slider slider `E2914  1 a 1 55 ]
+"991
+} 0
+"690
+[v _Slider_Service Slider_Service `(v  1 s 1 Slider_Service ]
+{
+[v Slider_Service@sliderName sliderName `E2914  1 a 1 wreg ]
+[s S1118 . 17 `DCE2914 1 slider 1 0 `DCE2911 1 type 1 1 `DCE2738 1 startSegment 1 2 `DCuc 1 segmentCount 1 3 `DCuc 1 resolDeadband 1 4 `DCuc 1 positionHysteresis 1 5 `us 1 contactThreshold 2 6 `uc 1 rightHysteresis 1 8 `uc 1 leftHysteresis 1 9 `us 1 rawPosition 2 10 `us 1 sliderPosition 2 12 `us 1 contactSize 2 14 `uc 1 sliderStatus 1 16 ]
+"700
+[v Slider_Service@slider slider `*.4S1118  1 a 1 53 ]
+"693
+[v Slider_Service@segment segment `us  1 a 2 50 ]
+[v Slider_Service@position position `us  1 a 2 47 ]
+"694
+[v Slider_Service@status status `uc  1 a 1 49 ]
+"695
+[v Slider_Service@valid_contact_found valid_contact_found `uc  1 a 1 46 ]
+"694
+[v Slider_Service@group_status group_status `uc  1 a 1 45 ]
+"690
+[v Slider_Service@sliderName sliderName `E2914  1 a 1 wreg ]
+"694
+[v Slider_Service@sliderName sliderName `E2914  1 a 1 52 ]
+"788
+} 0
+"658
+[v _calculate_position calculate_position `(us  1 s 2 calculate_position ]
+{
+[s S1118 . 17 `DCE2914 1 slider 1 0 `DCE2911 1 type 1 1 `DCE2738 1 startSegment 1 2 `DCuc 1 segmentCount 1 3 `DCuc 1 resolDeadband 1 4 `DCuc 1 positionHysteresis 1 5 `us 1 contactThreshold 2 6 `uc 1 rightHysteresis 1 8 `uc 1 leftHysteresis 1 9 `us 1 rawPosition 2 10 `us 1 sliderPosition 2 12 `us 1 contactSize 2 14 `uc 1 sliderStatus 1 16 ]
+[v calculate_position@slider slider `*.4S1118  1 a 1 wreg ]
+"660
+[v calculate_position@raw_position raw_position `us  1 a 2 38 ]
+[v calculate_position@filtered_position filtered_position `us  1 a 2 36 ]
+[v calculate_position@position position `us  1 a 2 34 ]
+"658
+[v calculate_position@slider slider `*.4S1118  1 a 1 wreg ]
+"663
+"658
+[v calculate_position@slider slider `*.4S1118  1 a 1 40 ]
+"683
+} 0
+"289
+[v _positional_hysteresis positional_hysteresis `(us  1 s 2 positional_hysteresis ]
+{
+[s S1118 . 17 `DCE2914 1 slider 1 0 `DCE2911 1 type 1 1 `DCE2738 1 startSegment 1 2 `DCuc 1 segmentCount 1 3 `DCuc 1 resolDeadband 1 4 `DCuc 1 positionHysteresis 1 5 `us 1 contactThreshold 2 6 `uc 1 rightHysteresis 1 8 `uc 1 leftHysteresis 1 9 `us 1 rawPosition 2 10 `us 1 sliderPosition 2 12 `us 1 contactSize 2 14 `uc 1 sliderStatus 1 16 ]
+[v positional_hysteresis@slider slider `*.4S1118  1 a 1 wreg ]
+"293
+[v positional_hysteresis@distance distance `s  1 a 2 18 ]
+"291
+[v positional_hysteresis@filtered_position filtered_position `us  1 a 2 14 ]
+[v positional_hysteresis@previous_position previous_position `us  1 a 2 12 ]
+"294
+[v positional_hysteresis@polarity polarity `uc  1 a 1 17 ]
+"292
+[v positional_hysteresis@hyst_width hyst_width `uc  1 a 1 16 ]
+"289
+[v positional_hysteresis@slider slider `*.4S1118  1 a 1 wreg ]
+[v positional_hysteresis@current_position current_position `us  1 p 2 10 ]
+"294
+"289
+[v positional_hysteresis@slider slider `*.4S1118  1 a 1 20 ]
+"332
+} 0
+"341
+[v _moving_average_filter moving_average_filter `(us  1 s 2 moving_average_filter ]
+{
+[s S1118 . 17 `DCE2914 1 slider 1 0 `DCE2911 1 type 1 1 `DCE2738 1 startSegment 1 2 `DCuc 1 segmentCount 1 3 `DCuc 1 resolDeadband 1 4 `DCuc 1 positionHysteresis 1 5 `us 1 contactThreshold 2 6 `uc 1 rightHysteresis 1 8 `uc 1 leftHysteresis 1 9 `us 1 rawPosition 2 10 `us 1 sliderPosition 2 12 `us 1 contactSize 2 14 `uc 1 sliderStatus 1 16 ]
+[v moving_average_filter@slider slider `*.4S1118  1 a 1 wreg ]
+"345
+[v moving_average_filter@distance distance `s  1 a 2 19 ]
+"343
+[v moving_average_filter@dist_temp dist_temp `us  1 a 2 17 ]
+"344
+[v moving_average_filter@previous_position previous_position `us  1 a 2 15 ]
+"343
+[v moving_average_filter@filtered_position filtered_position `us  1 a 2 12 ]
+"341
+[v moving_average_filter@slider slider `*.4S1118  1 a 1 wreg ]
+[v moving_average_filter@current_position current_position `us  1 p 2 10 ]
+"347
+"341
+[v moving_average_filter@slider slider `*.4S1118  1 a 1 14 ]
+"378
+} 0
+"251
+[v _get_difference get_difference `(s  1 s 2 get_difference ]
+{
+[s S1118 . 17 `DCE2914 1 slider 1 0 `DCE2911 1 type 1 1 `DCE2738 1 startSegment 1 2 `DCuc 1 segmentCount 1 3 `DCuc 1 resolDeadband 1 4 `DCuc 1 positionHysteresis 1 5 `us 1 contactThreshold 2 6 `uc 1 rightHysteresis 1 8 `uc 1 leftHysteresis 1 9 `us 1 rawPosition 2 10 `us 1 sliderPosition 2 12 `us 1 contactSize 2 14 `uc 1 sliderStatus 1 16 ]
+[v get_difference@slider slider `*.4S1118  1 a 1 wreg ]
+"253
+[v get_difference@diff diff `s  1 a 2 8 ]
+"254
+[v get_difference@rollover_threshold rollover_threshold `us  1 a 2 6 ]
+"251
+[v get_difference@slider slider `*.4S1118  1 a 1 wreg ]
+[v get_difference@previous_position previous_position `us  1 p 2 2 ]
+[v get_difference@current_position current_position `us  1 p 2 4 ]
+"257
+"251
+[v get_difference@slider slider `*.4S1118  1 a 1 5 ]
+"282
+} 0
+"522
+[v _calculate_raw_position calculate_raw_position `(us  1 s 2 calculate_raw_position ]
+{
+[s S1118 . 17 `DCE2914 1 slider 1 0 `DCE2911 1 type 1 1 `DCE2738 1 startSegment 1 2 `DCuc 1 segmentCount 1 3 `DCuc 1 resolDeadband 1 4 `DCuc 1 positionHysteresis 1 5 `us 1 contactThreshold 2 6 `uc 1 rightHysteresis 1 8 `uc 1 leftHysteresis 1 9 `us 1 rawPosition 2 10 `us 1 sliderPosition 2 12 `us 1 contactSize 2 14 `uc 1 sliderStatus 1 16 ]
+[v calculate_raw_position@slider slider `*.4S1118  1 a 1 wreg ]
+"528
+[v calculate_raw_position@position position `us  1 a 2 29 ]
+[v calculate_raw_position@deadband deadband `us  1 a 2 24 ]
+[v calculate_raw_position@deadband_set deadband_set `us  1 a 2 21 ]
+"527
+[v calculate_raw_position@size size `uc  1 a 1 27 ]
+"525
+[v calculate_raw_position@interpolation_bits interpolation_bits `uc  1 a 1 26 ]
+"526
+[v calculate_raw_position@interpolation_scale interpolation_scale `uc  1 a 1 23 ]
+"524
+[v calculate_raw_position@ref_node ref_node `uc  1 a 1 20 ]
+"522
+[v calculate_raw_position@slider slider `*.4S1118  1 a 1 wreg ]
+"531
+"522
+[v calculate_raw_position@slider slider `*.4S1118  1 a 1 28 ]
+"621
+} 0
+"385
+[v _interpolate interpolate `(us  1 s 2 interpolate ]
+{
+"387
+[v interpolate@rtnval rtnval `us  1 a 2 11 ]
+"385
+[v interpolate@delta1 delta1 `us  1 p 2 0 ]
+[v interpolate@delta2 delta2 `us  1 p 2 2 ]
+[v interpolate@delta3 delta3 `us  1 p 2 4 ]
+[v interpolate@num_bits num_bits `uc  1 p 1 6 ]
+"401
+} 0
+"191
+[v _divide divide `(us  1 s 2 divide ]
+{
+"193
+[v divide@result result `us  1 a 2 8 ]
+"191
+[v divide@numerator numerator `us  1 p 2 2 ]
+[v divide@denominator denominator `us  1 p 2 4 ]
+[v divide@exponent exponent `uc  1 p 1 6 ]
+"242
+} 0
+"628
+[v _calculate_contact_size calculate_contact_size `(us  1 s 2 calculate_contact_size ]
+{
+[s S1118 . 17 `DCE2914 1 slider 1 0 `DCE2911 1 type 1 1 `DCE2738 1 startSegment 1 2 `DCuc 1 segmentCount 1 3 `DCuc 1 resolDeadband 1 4 `DCuc 1 positionHysteresis 1 5 `us 1 contactThreshold 2 6 `uc 1 rightHysteresis 1 8 `uc 1 leftHysteresis 1 9 `us 1 rawPosition 2 10 `us 1 sliderPosition 2 12 `us 1 contactSize 2 14 `uc 1 sliderStatus 1 16 ]
+[v calculate_contact_size@slider slider `*.4S1118  1 a 1 wreg ]
+"630
+[v calculate_contact_size@contact_size contact_size `us  1 a 2 20 ]
+"628
+[v calculate_contact_size@slider slider `*.4S1118  1 a 1 wreg ]
+"632
+"628
+[v calculate_contact_size@slider slider `*.4S1118  1 a 1 22 ]
+"651
+} 0
+"484
+[v _Slider_FindRight Slider_FindRight `(s  1 s 2 Slider_FindRight ]
+{
+[s S1118 . 17 `DCE2914 1 slider 1 0 `DCE2911 1 type 1 1 `DCE2738 1 startSegment 1 2 `DCuc 1 segmentCount 1 3 `DCuc 1 resolDeadband 1 4 `DCuc 1 positionHysteresis 1 5 `us 1 contactThreshold 2 6 `uc 1 rightHysteresis 1 8 `uc 1 leftHysteresis 1 9 `us 1 rawPosition 2 10 `us 1 sliderPosition 2 12 `us 1 contactSize 2 14 `uc 1 sliderStatus 1 16 ]
+[v Slider_FindRight@slider slider `*.4S1118  1 a 1 wreg ]
+"486
+[v Slider_FindRight@ref_node ref_node `uc  1 a 1 10 ]
+"484
+[v Slider_FindRight@slider slider `*.4S1118  1 a 1 wreg ]
+"486
+"484
+[v Slider_FindRight@slider slider `*.4S1118  1 a 1 11 ]
+"515
+} 0
+"408
+[v _Slider_FindMiddle Slider_FindMiddle `(s  1 s 2 Slider_FindMiddle ]
+{
+[s S1118 . 17 `DCE2914 1 slider 1 0 `DCE2911 1 type 1 1 `DCE2738 1 startSegment 1 2 `DCuc 1 segmentCount 1 3 `DCuc 1 resolDeadband 1 4 `DCuc 1 positionHysteresis 1 5 `us 1 contactThreshold 2 6 `uc 1 rightHysteresis 1 8 `uc 1 leftHysteresis 1 9 `us 1 rawPosition 2 10 `us 1 sliderPosition 2 12 `us 1 contactSize 2 14 `uc 1 sliderStatus 1 16 ]
+[v Slider_FindMiddle@slider slider `*.4S1118  1 a 1 wreg ]
+"411
+[v Slider_FindMiddle@maximumDelta maximumDelta `s  1 a 2 12 ]
+[v Slider_FindMiddle@channelDelta channelDelta `s  1 a 2 10 ]
+"410
+[v Slider_FindMiddle@i i `uc  1 a 1 14 ]
+"408
+[v Slider_FindMiddle@slider slider `*.4S1118  1 a 1 wreg ]
+"413
+"408
+[v Slider_FindMiddle@slider slider `*.4S1118  1 a 1 15 ]
+"431
+} 0
+"438
+[v _Slider_FindLeft Slider_FindLeft `(s  1 s 2 Slider_FindLeft ]
+{
+[s S1118 . 17 `DCE2914 1 slider 1 0 `DCE2911 1 type 1 1 `DCE2738 1 startSegment 1 2 `DCuc 1 segmentCount 1 3 `DCuc 1 resolDeadband 1 4 `DCuc 1 positionHysteresis 1 5 `us 1 contactThreshold 2 6 `uc 1 rightHysteresis 1 8 `uc 1 leftHysteresis 1 9 `us 1 rawPosition 2 10 `us 1 sliderPosition 2 12 `us 1 contactSize 2 14 `uc 1 sliderStatus 1 16 ]
+[v Slider_FindLeft@slider slider `*.4S1118  1 a 1 wreg ]
+"440
+[v Slider_FindLeft@ref_node ref_node `uc  1 a 1 7 ]
+"438
+[v Slider_FindLeft@slider slider `*.4S1118  1 a 1 wreg ]
+"440
+"438
+[v Slider_FindLeft@slider slider `*.4S1118  1 a 1 6 ]
+"477
+} 0
+"580 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_Deviation_Get MTOUCH_Button_Deviation_Get `(c  1 e 1 0 ]
+{
+[v MTOUCH_Button_Deviation_Get@name name `E2936  1 a 1 wreg ]
+[v MTOUCH_Button_Deviation_Get@name name `E2936  1 a 1 wreg ]
+"582
+[v MTOUCH_Button_Deviation_Get@name name `E2936  1 a 1 8 ]
+"586
+} 0
+"1016 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_slider.c
+[v _Slider_DefaultCallback Slider_DefaultCallback `(v  1 s 1 Slider_DefaultCallback ]
+{
+[v Slider_DefaultCallback@slider slider `E2914  1 p 1 2 ]
+} 0
+"515 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_isPressed MTOUCH_Button_isPressed `(a  1 e 1 0 ]
+{
+[v MTOUCH_Button_isPressed@name name `E2936  1 a 1 wreg ]
+[v MTOUCH_Button_isPressed@name name `E2936  1 a 1 wreg ]
+"517
+[v MTOUCH_Button_isPressed@name name `E2936  1 a 1 9 ]
+"521
+} 0
+"196 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_SampleAll MTOUCH_Sensor_SampleAll `(a  1 e 1 0 ]
+{
+"198
+[v MTOUCH_Sensor_SampleAll@sensor sensor `E2707  1 a 1 24 ]
+"205
+} 0
+"242
+[v _Sensor_Service Sensor_Service `(E2719  1 s 1 Sensor_Service ]
+{
+[v Sensor_Service@name name `E2707  1 a 1 wreg ]
+[s S720 . 9 `DCE2707 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+]
+"244
+[v Sensor_Service@sensor sensor `*.39S720  1 a 2 21 ]
+"245
+[v Sensor_Service@error error `E2719  1 a 1 20 ]
+"242
+[v Sensor_Service@name name `E2707  1 a 1 wreg ]
+"244
+[v Sensor_Service@name name `E2707  1 a 1 19 ]
+"276
+} 0
+"578
+[v _Sensor_setSampled Sensor_setSampled `T(v  1 s 1 Sensor_setSampled ]
+{
+[s S720 . 9 `DCE2707 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+]
+[v Sensor_setSampled@sensor sensor `*.39S720  1 p 2 2 ]
+"581
+} 0
+"439
+[v _Sensor_RawSample_Update Sensor_RawSample_Update `(v  1 s 1 Sensor_RawSample_Update ]
+{
+[s S720 . 9 `DCE2707 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+]
+[v Sensor_RawSample_Update@sensor sensor `*.39S720  1 p 2 2 ]
+"451
+} 0
+"459
+[v _Sensor_DefaultCallback Sensor_DefaultCallback `(v  1 s 1 Sensor_DefaultCallback ]
+{
+[v Sensor_DefaultCallback@sensor sensor `E2707  1 p 1 2 ]
+} 0
+"289
+[v _Sensor_Acquisition Sensor_Acquisition `(E2719  1 s 1 Sensor_Acquisition ]
+{
+"292
+[v Sensor_Acquisition@retry retry `uc  1 a 1 14 ]
+[s S720 . 9 `DCE2707 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+]
+"289
+[v Sensor_Acquisition@sensor sensor `*.39S720  1 p 2 11 ]
+"316
+} 0
+"1 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 2 ]
+"4
+} 0
+"524 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _Sensor_setInactive Sensor_setInactive `T(v  1 s 1 Sensor_setInactive ]
+{
+[s S720 . 9 `DCE2707 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+]
+[v Sensor_setInactive@sensor sensor `*.39S720  1 p 2 2 ]
+"527
+} 0
+"519
+[v _Sensor_setActive Sensor_setActive `T(v  1 s 1 Sensor_setActive ]
+{
+[s S720 . 9 `DCE2707 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+]
+[v Sensor_setActive@sensor sensor `*.39S720  1 p 2 2 ]
+"522
+} 0
+"504
+[v _Sensor_isEnabled Sensor_isEnabled `(a  1 s 1 Sensor_isEnabled ]
+{
+[s S720 . 9 `DCE2707 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+]
+[v Sensor_isEnabled@sensor sensor `*.39S720  1 p 2 2 ]
+"510
+} 0
+"324
+[v _Sensor_Acq_ExecutePacket Sensor_Acq_ExecutePacket `(E2719  1 s 1 Sensor_Acq_ExecutePacket ]
+{
+"327
+[v Sensor_Acq_ExecutePacket@error error `E2719  1 a 1 10 ]
+"331
+[v Sensor_Acq_ExecutePacket@GIE_state GIE_state `uc  1 a 1 9 ]
+"329
+[v Sensor_Acq_ExecutePacket@ADCON1_temp ADCON1_temp `uc  1 a 1 8 ]
+"328
+[v Sensor_Acq_ExecutePacket@ADCON0_temp ADCON0_temp `uc  1 a 1 7 ]
+[s S720 . 9 `DCE2707 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+]
+"324
+[v Sensor_Acq_ExecutePacket@sensor sensor `*.39S720  1 p 2 4 ]
+"370
+} 0
+"471
+[v _Sensor_setScanFunction Sensor_setScanFunction `(v  1 s 1 Sensor_setScanFunction ]
+{
+[s S720 . 9 `DCE2707 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+]
+[v Sensor_setScanFunction@sensor sensor `*.39S720  1 p 2 2 ]
+"475
+} 0
+"388
+[v _Sensor_Acq_ExecuteScan Sensor_Acq_ExecuteScan `(v  1 s 1 Sensor_Acq_ExecuteScan ]
+{
+"391
+[v Sensor_Acq_ExecuteScan@result result `us  1 a 2 8 ]
+"421
+} 0
+"1383 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_sensor_scan.c
+[v _MTOUCH_CVD_ScanB_10 MTOUCH_CVD_ScanB_10 `(v  1 e 1 0 ]
+{
+"1434
+} 0
+"1129
+[v _MTOUCH_CVD_ScanB_8 MTOUCH_CVD_ScanB_8 `(v  1 e 1 0 ]
+{
+"1180
+} 0
+"1002
+[v _MTOUCH_CVD_ScanB_7 MTOUCH_CVD_ScanB_7 `(v  1 e 1 0 ]
+{
+"1053
+} 0
+"875
+[v _MTOUCH_CVD_ScanB_6 MTOUCH_CVD_ScanB_6 `(v  1 e 1 0 ]
+{
+"926
+} 0
+"748
+[v _MTOUCH_CVD_ScanB_5 MTOUCH_CVD_ScanB_5 `(v  1 e 1 0 ]
+{
+"799
+} 0
+"621
+[v _MTOUCH_CVD_ScanB_4 MTOUCH_CVD_ScanB_4 `(v  1 e 1 0 ]
+{
+"672
+} 0
+"494
+[v _MTOUCH_CVD_ScanB_3 MTOUCH_CVD_ScanB_3 `(v  1 e 1 0 ]
+{
+"545
+} 0
+"367
+[v _MTOUCH_CVD_ScanB_2 MTOUCH_CVD_ScanB_2 `(v  1 e 1 0 ]
+{
+"418
+} 0
+"240
+[v _MTOUCH_CVD_ScanB_1 MTOUCH_CVD_ScanB_1 `(v  1 e 1 0 ]
+{
+"291
+} 0
+"113
+[v _MTOUCH_CVD_ScanB_0 MTOUCH_CVD_ScanB_0 `(v  1 e 1 0 ]
+{
+"164
+} 0
+"1256
+[v _MTOUCH_CVD_ScanB_9 MTOUCH_CVD_ScanB_9 `(v  1 e 1 0 ]
+{
+"1307
+} 0
+"1320
+[v _MTOUCH_CVD_ScanA_10 MTOUCH_CVD_ScanA_10 `(v  1 e 1 0 ]
+{
+"1370
+} 0
+"1066
+[v _MTOUCH_CVD_ScanA_8 MTOUCH_CVD_ScanA_8 `(v  1 e 1 0 ]
+{
+"1116
+} 0
+"939
+[v _MTOUCH_CVD_ScanA_7 MTOUCH_CVD_ScanA_7 `(v  1 e 1 0 ]
+{
+"989
+} 0
+"812
+[v _MTOUCH_CVD_ScanA_6 MTOUCH_CVD_ScanA_6 `(v  1 e 1 0 ]
+{
+"862
+} 0
+"685
+[v _MTOUCH_CVD_ScanA_5 MTOUCH_CVD_ScanA_5 `(v  1 e 1 0 ]
+{
+"735
+} 0
+"558
+[v _MTOUCH_CVD_ScanA_4 MTOUCH_CVD_ScanA_4 `(v  1 e 1 0 ]
+{
+"608
+} 0
+"431
+[v _MTOUCH_CVD_ScanA_3 MTOUCH_CVD_ScanA_3 `(v  1 e 1 0 ]
+{
+"481
+} 0
+"304
+[v _MTOUCH_CVD_ScanA_2 MTOUCH_CVD_ScanA_2 `(v  1 e 1 0 ]
+{
+"354
+} 0
+"177
+[v _MTOUCH_CVD_ScanA_1 MTOUCH_CVD_ScanA_1 `(v  1 e 1 0 ]
+{
+"227
+} 0
+"50
+[v _MTOUCH_CVD_ScanA_0 MTOUCH_CVD_ScanA_0 `(v  1 e 1 0 ]
+{
+"100
+} 0
+"1193
+[v _MTOUCH_CVD_ScanA_9 MTOUCH_CVD_ScanA_9 `(v  1 e 1 0 ]
+{
+"1243
+} 0
+"66 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_random.c
+[v _MTOUCH_Random MTOUCH_Random `(uc  1 e 1 0 ]
+{
+"68
+[v MTOUCH_Random@seed seed `uc  1 s 1 seed ]
+"86
+} 0
+"372 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Delay MTOUCH_Delay `(v  1 s 1 MTOUCH_Delay ]
+{
+"374
+[v MTOUCH_Delay@i i `uc  1 a 1 3 ]
+"376
+} 0
+"101 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch.c
+[v _MTOUCH_Initialize MTOUCH_Initialize `(v  1 e 1 0 ]
+{
+"110
+} 0
+"171 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/tmr1.c
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 2 ]
+"173
+} 0
+"965 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_slider.c
+[v _MTOUCH_Slider_InitializeAll MTOUCH_Slider_InitializeAll `(v  1 e 1 0 ]
+{
+"967
+[v MTOUCH_Slider_InitializeAll@slider slider `E2914  1 a 1 6 ]
+"973
+} 0
+"795
+[v _Slider_Initialize Slider_Initialize `(v  1 s 1 Slider_Initialize ]
+{
+[v Slider_Initialize@sliderName sliderName `E2914  1 a 1 wreg ]
+[s S1118 . 17 `DCE2914 1 slider 1 0 `DCE2911 1 type 1 1 `DCE2738 1 startSegment 1 2 `DCuc 1 segmentCount 1 3 `DCuc 1 resolDeadband 1 4 `DCuc 1 positionHysteresis 1 5 `us 1 contactThreshold 2 6 `uc 1 rightHysteresis 1 8 `uc 1 leftHysteresis 1 9 `us 1 rawPosition 2 10 `us 1 sliderPosition 2 12 `us 1 contactSize 2 14 `uc 1 sliderStatus 1 16 ]
+"799
+[v Slider_Initialize@slider slider `*.4S1118  1 a 1 4 ]
+"795
+[v Slider_Initialize@sliderName sliderName `E2914  1 a 1 wreg ]
+"797
+[v Slider_Initialize@sliderName sliderName `E2914  1 a 1 3 ]
+"811
+} 0
+"181 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_Scan_Initialize MTOUCH_Sensor_Scan_Initialize `(v  1 e 1 0 ]
+{
+"186
+} 0
+"556
+[v _MTOUCH_Sensor_Sampled_ResetAll MTOUCH_Sensor_Sampled_ResetAll `(v  1 e 1 0 ]
+{
+[s S720 . 9 `DCE2707 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+]
+"558
+[v MTOUCH_Sensor_Sampled_ResetAll@sensor sensor `*.39S720  1 a 2 2 ]
+"563
+} 0
+"166
+[v _MTOUCH_Sensor_InitializeAll MTOUCH_Sensor_InitializeAll `(v  1 e 1 0 ]
+{
+"168
+[v MTOUCH_Sensor_InitializeAll@sensor sensor `E2707  1 a 1 10 ]
+"173
+} 0
+"152
+[v _MTOUCH_Sensor_Initialize MTOUCH_Sensor_Initialize `(E2719  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_Initialize@sensor sensor `E2707  1 a 1 wreg ]
+[v MTOUCH_Sensor_Initialize@sensor sensor `E2707  1 a 1 wreg ]
+"154
+[v MTOUCH_Sensor_Initialize@sensor sensor `E2707  1 a 1 8 ]
+"158
+} 0
+"573
+[v _Sensor_Sampled_Reset Sensor_Sampled_Reset `T(v  1 s 1 Sensor_Sampled_Reset ]
+{
+[s S720 . 9 `DCE2707 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+]
+[v Sensor_Sampled_Reset@sensor sensor `*.39S720  1 p 2 8 ]
+"576
+} 0
+"490
+[v _MTOUCH_Sensor_Enable MTOUCH_Sensor_Enable `(v  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_Enable@sensor sensor `E2707  1 a 1 wreg ]
+[v MTOUCH_Sensor_Enable@sensor sensor `E2707  1 a 1 wreg ]
+"492
+[v MTOUCH_Sensor_Enable@sensor sensor `E2707  1 a 1 8 ]
+"494
+} 0
+"223 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_InitializeAll MTOUCH_Button_InitializeAll `(v  1 e 1 0 ]
+{
+"225
+[v MTOUCH_Button_InitializeAll@button button `E2936  1 a 1 7 ]
+"233
+} 0
+"4 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 1 0 ]
+{
+"8
+[v memcpy@s s `*.25DCuc  1 a 2 2 ]
+"7
+[v memcpy@d d `*.39uc  1 a 2 0 ]
+"9
+[v memcpy@tmp tmp `uc  1 a 1 4 ]
+"4
+[v memcpy@d1 d1 `*.39v  1 p 2 2 ]
+[v memcpy@s1 s1 `*.25DCv  1 p 2 4 ]
+[v memcpy@n n `ui  1 p 2 6 ]
+"18
+} 0
+"241 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_ServiceAll MTOUCH_Button_ServiceAll `(v  1 e 1 0 ]
+{
+"243
+[v MTOUCH_Button_ServiceAll@button button `E2936  1 a 1 29 ]
+"251
+} 0
+"253
+[v _Button_Service Button_Service `(v  1 s 1 Button_Service ]
+{
+[v Button_Service@name name `E2936  1 a 1 wreg ]
+[s S134 . 17 `DCE2936 1 name 1 0 `DCE2873 1 sensor 1 1 `E3157 1 state 1 2 `E3165 1 aks_group 1 3 `us 1 reading 2 4 `ul 1 baseline 4 6 `c 1 deviation 1 10 `us 1 counter 2 11 `us 1 baseline_count 2 13 `uc 1 threshold 1 15 `uc 1 scaling 1 16 ]
+"255
+[v Button_Service@button button `*.39S134  1 a 2 26 ]
+"253
+[v Button_Service@name name `E2936  1 a 1 wreg ]
+"255
+[v Button_Service@name name `E2936  1 a 1 25 ]
+"268
+} 0
+"565 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_wasSampled MTOUCH_Sensor_wasSampled `(a  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_wasSampled@sensor sensor `E2707  1 a 1 wreg ]
+[v MTOUCH_Sensor_wasSampled@sensor sensor `E2707  1 a 1 wreg ]
+"567
+[v MTOUCH_Sensor_wasSampled@sensor sensor `E2707  1 a 1 8 ]
+"571
+} 0
+"538
+[v _MTOUCH_Sensor_isCalibrated MTOUCH_Sensor_isCalibrated `(a  1 e 1 0 ]
+{
+"542
+} 0
+"421 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_button.c
+[v _Button_State_Disabled Button_State_Disabled `(v  1 s 1 Button_State_Disabled ]
+{
+[s S134 . 17 `DCE2936 1 name 1 0 `DCE2873 1 sensor 1 1 `E3157 1 state 1 2 `E3165 1 aks_group 1 3 `us 1 reading 2 4 `ul 1 baseline 4 6 `c 1 deviation 1 10 `us 1 counter 2 11 `us 1 baseline_count 2 13 `uc 1 threshold 1 15 `uc 1 scaling 1 16 ]
+[v Button_State_Disabled@button button `*.39S134  1 p 2 15 ]
+"422
+} 0
+"392
+[v _Button_State_ReleaseDebounce Button_State_ReleaseDebounce `(v  1 s 1 Button_State_ReleaseDebounce ]
+{
+[s S134 . 17 `DCE2936 1 name 1 0 `DCE2873 1 sensor 1 1 `E3157 1 state 1 2 `E3165 1 aks_group 1 3 `us 1 reading 2 4 `ul 1 baseline 4 6 `c 1 deviation 1 10 `us 1 counter 2 11 `us 1 baseline_count 2 13 `uc 1 threshold 1 15 `uc 1 scaling 1 16 ]
+[v Button_State_ReleaseDebounce@button button `*.39S134  1 p 2 15 ]
+"411
+} 0
+"343
+[v _Button_State_Pressed Button_State_Pressed `(v  1 s 1 Button_State_Pressed ]
+{
+[s S134 . 17 `DCE2936 1 name 1 0 `DCE2873 1 sensor 1 1 `E3157 1 state 1 2 `E3165 1 aks_group 1 3 `us 1 reading 2 4 `ul 1 baseline 4 6 `c 1 deviation 1 10 `us 1 counter 2 11 `us 1 baseline_count 2 13 `uc 1 threshold 1 15 `uc 1 scaling 1 16 ]
+[v Button_State_Pressed@button button `*.39S134  1 p 2 15 ]
+"359
+} 0
+"361
+[v _Button_State_PressDebounce Button_State_PressDebounce `(v  1 s 1 Button_State_PressDebounce ]
+{
+[s S134 . 17 `DCE2936 1 name 1 0 `DCE2873 1 sensor 1 1 `E3157 1 state 1 2 `E3165 1 aks_group 1 3 `us 1 reading 2 4 `ul 1 baseline 4 6 `c 1 deviation 1 10 `us 1 counter 2 11 `us 1 baseline_count 2 13 `uc 1 threshold 1 15 `uc 1 scaling 1 16 ]
+[v Button_State_PressDebounce@button button `*.39S134  1 p 2 15 ]
+"390
+} 0
+"291
+[v _Button_State_NotPressed Button_State_NotPressed `(v  1 s 1 Button_State_NotPressed ]
+{
+[s S134 . 17 `DCE2936 1 name 1 0 `DCE2873 1 sensor 1 1 `E3157 1 state 1 2 `E3165 1 aks_group 1 3 `us 1 reading 2 4 `ul 1 baseline 4 6 `c 1 deviation 1 10 `us 1 counter 2 11 `us 1 baseline_count 2 13 `uc 1 threshold 1 15 `uc 1 scaling 1 16 ]
+[v Button_State_NotPressed@button button `*.39S134  1 p 2 15 ]
+"341
+} 0
+"270
+[v _Button_State_Initializing Button_State_Initializing `(v  1 s 1 Button_State_Initializing ]
+{
+[s S134 . 17 `DCE2936 1 name 1 0 `DCE2873 1 sensor 1 1 `E3157 1 state 1 2 `E3165 1 aks_group 1 3 `us 1 reading 2 4 `ul 1 baseline 4 6 `c 1 deviation 1 10 `us 1 counter 2 11 `us 1 baseline_count 2 13 `uc 1 threshold 1 15 `uc 1 scaling 1 16 ]
+[v Button_State_Initializing@button button `*.39S134  1 p 2 15 ]
+"290
+} 0
+"412
+[v _Button_State_Suspended Button_State_Suspended `(v  1 s 1 Button_State_Suspended ]
+{
+[s S134 . 17 `DCE2936 1 name 1 0 `DCE2873 1 sensor 1 1 `E3157 1 state 1 2 `E3165 1 aks_group 1 3 `us 1 reading 2 4 `ul 1 baseline 4 6 `c 1 deviation 1 10 `us 1 counter 2 11 `us 1 baseline_count 2 13 `uc 1 threshold 1 15 `uc 1 scaling 1 16 ]
+[v Button_State_Suspended@button button `*.39S134  1 p 2 15 ]
+"420
+} 0
+"484 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_Disable MTOUCH_Sensor_Disable `(v  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_Disable@sensor sensor `E2707  1 a 1 wreg ]
+[v MTOUCH_Sensor_Disable@sensor sensor `E2707  1 a 1 wreg ]
+"486
+[v MTOUCH_Sensor_Disable@sensor sensor `E2707  1 a 1 8 ]
+"488
+} 0
+"786 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_button.c
+[v _Button_DefaultCallback Button_DefaultCallback `(v  1 s 1 Button_DefaultCallback ]
+{
+[v Button_DefaultCallback@button button `E2936  1 p 1 2 ]
+} 0
+"211
+[v _MTOUCH_Button_Initialize MTOUCH_Button_Initialize `(v  1 e 1 0 ]
+{
+[v MTOUCH_Button_Initialize@name name `E2936  1 a 1 wreg ]
+[s S134 . 17 `DCE2936 1 name 1 0 `DCE2873 1 sensor 1 1 `E3157 1 state 1 2 `E3165 1 aks_group 1 3 `us 1 reading 2 4 `ul 1 baseline 4 6 `c 1 deviation 1 10 `us 1 counter 2 11 `us 1 baseline_count 2 13 `uc 1 threshold 1 15 `uc 1 scaling 1 16 ]
+"213
+[v MTOUCH_Button_Initialize@button button `*.39S134  1 a 2 5 ]
+"211
+[v MTOUCH_Button_Initialize@name name `E2936  1 a 1 wreg ]
+"213
+[v MTOUCH_Button_Initialize@name name `E2936  1 a 1 4 ]
+"221
+} 0
+"544 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_Calibrate MTOUCH_Sensor_Calibrate `(v  1 e 1 0 ]
+{
+"547
+} 0
+"717 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_button.c
+[v _Button_Check_AKS_Block Button_Check_AKS_Block `(a  1 s 1 Button_Check_AKS_Block ]
+{
+[s S134 . 17 `DCE2936 1 name 1 0 `DCE2873 1 sensor 1 1 `E3157 1 state 1 2 `E3165 1 aks_group 1 3 `us 1 reading 2 4 `ul 1 baseline 4 6 `c 1 deviation 1 10 `us 1 counter 2 11 `us 1 baseline_count 2 13 `uc 1 threshold 1 15 `uc 1 scaling 1 16 ]
+"721
+[v Button_Check_AKS_Block@check_button check_button `*.39S134  1 a 2 13 ]
+"720
+[v Button_Check_AKS_Block@surplus_deviation_check_button surplus_deviation_check_button `s  1 a 2 11 ]
+[v Button_Check_AKS_Block@surplus_deviation_this_button surplus_deviation_this_button `s  1 a 2 8 ]
+"719
+[v Button_Check_AKS_Block@currentAKSGroup currentAKSGroup `E3165  1 a 1 10 ]
+"717
+[v Button_Check_AKS_Block@button button `*.39S134  1 p 2 4 ]
+"751
+} 0
+"496 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_isEnabled MTOUCH_Sensor_isEnabled `(a  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_isEnabled@sensor sensor `E2707  1 a 1 wreg ]
+[v MTOUCH_Sensor_isEnabled@sensor sensor `E2707  1 a 1 wreg ]
+"498
+[v MTOUCH_Sensor_isEnabled@sensor sensor `E2707  1 a 1 8 ]
+"502
+} 0
+"610 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_button.c
+[v _Button_Unscaled_Deviation_Get Button_Unscaled_Deviation_Get `(us  1 s 2 Button_Unscaled_Deviation_Get ]
+{
+[s S134 . 17 `DCE2936 1 name 1 0 `DCE2873 1 sensor 1 1 `E3157 1 state 1 2 `E3165 1 aks_group 1 3 `us 1 reading 2 4 `ul 1 baseline 4 6 `c 1 deviation 1 10 `us 1 counter 2 11 `us 1 baseline_count 2 13 `uc 1 threshold 1 15 `uc 1 scaling 1 16 ]
+[v Button_Unscaled_Deviation_Get@button button `*.39S134  1 p 2 2 ]
+"613
+} 0
+"759
+[v _Button_Reburst_Request Button_Reburst_Request `T(v  1 s 1 Button_Reburst_Request ]
+{
+[s S134 . 17 `DCE2936 1 name 1 0 `DCE2873 1 sensor 1 1 `E3157 1 state 1 2 `E3165 1 aks_group 1 3 `us 1 reading 2 4 `ul 1 baseline 4 6 `c 1 deviation 1 10 `us 1 counter 2 11 `us 1 baseline_count 2 13 `uc 1 threshold 1 15 `uc 1 scaling 1 16 ]
+[v Button_Reburst_Request@button button `*.39S134  1 p 2 8 ]
+"762
+} 0
+"674
+[v _Button_Baseline_Update Button_Baseline_Update `(v  1 s 1 Button_Baseline_Update ]
+{
+[s S134 . 17 `DCE2936 1 name 1 0 `DCE2873 1 sensor 1 1 `E3157 1 state 1 2 `E3165 1 aks_group 1 3 `us 1 reading 2 4 `ul 1 baseline 4 6 `c 1 deviation 1 10 `us 1 counter 2 11 `us 1 baseline_count 2 13 `uc 1 threshold 1 15 `uc 1 scaling 1 16 ]
+[v Button_Baseline_Update@button button `*.39S134  1 p 2 2 ]
+"688
+} 0
+"668
+[v _Button_Baseline_Initialize Button_Baseline_Initialize `(v  1 s 1 Button_Baseline_Initialize ]
+{
+[s S134 . 17 `DCE2936 1 name 1 0 `DCE2873 1 sensor 1 1 `E3157 1 state 1 2 `E3165 1 aks_group 1 3 `us 1 reading 2 4 `ul 1 baseline 4 6 `c 1 deviation 1 10 `us 1 counter 2 11 `us 1 baseline_count 2 13 `uc 1 threshold 1 15 `uc 1 scaling 1 16 ]
+[v Button_Baseline_Initialize@button button `*.39S134  1 p 2 5 ]
+"672
+} 0
+"641
+[v _Button_Reading_Update Button_Reading_Update `(v  1 s 1 Button_Reading_Update ]
+{
+[s S134 . 17 `DCE2936 1 name 1 0 `DCE2873 1 sensor 1 1 `E3157 1 state 1 2 `E3165 1 aks_group 1 3 `us 1 reading 2 4 `ul 1 baseline 4 6 `c 1 deviation 1 10 `us 1 counter 2 11 `us 1 baseline_count 2 13 `uc 1 threshold 1 15 `uc 1 scaling 1 16 ]
+[v Button_Reading_Update@button button `*.39S134  1 p 2 9 ]
+"653
+} 0
+"655
+[v _Button_Reading_Update_Helper Button_Reading_Update_Helper `(v  1 s 1 Button_Reading_Update_Helper ]
+{
+[s S134 . 17 `DCE2936 1 name 1 0 `DCE2873 1 sensor 1 1 `E3157 1 state 1 2 `E3165 1 aks_group 1 3 `us 1 reading 2 4 `ul 1 baseline 4 6 `c 1 deviation 1 10 `us 1 counter 2 11 `us 1 baseline_count 2 13 `uc 1 threshold 1 15 `uc 1 scaling 1 16 ]
+[v Button_Reading_Update_Helper@button button `*.39S134  1 p 2 5 ]
+"666
+} 0
+"429 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_RawSample_Get MTOUCH_Sensor_RawSample_Get `(us  1 e 2 0 ]
+{
+[v MTOUCH_Sensor_RawSample_Get@name name `E2707  1 a 1 wreg ]
+[v MTOUCH_Sensor_RawSample_Get@name name `E2707  1 a 1 wreg ]
+"431
+[v MTOUCH_Sensor_RawSample_Get@name name `E2707  1 a 1 4 ]
+"437
+} 0
+"15 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 6 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 2 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 4 ]
+"53
+} 0
+"588 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch_button.c
+[v _Button_Deviation_Update Button_Deviation_Update `(v  1 s 1 Button_Deviation_Update ]
+{
+"590
+[v Button_Deviation_Update@deviation deviation `l  1 a 4 4 ]
+[s S134 . 17 `DCE2936 1 name 1 0 `DCE2873 1 sensor 1 1 `E3157 1 state 1 2 `E3165 1 aks_group 1 3 `us 1 reading 2 4 `ul 1 baseline 4 6 `c 1 deviation 1 10 `us 1 counter 2 11 `us 1 baseline_count 2 13 `uc 1 threshold 1 15 `uc 1 scaling 1 16 ]
+"588
+[v Button_Deviation_Update@button button `*.39S134  1 p 2 2 ]
+"608
+} 0
+"764
+[v _Button_Reburst_Clear Button_Reburst_Clear `T(v  1 s 1 Button_Reburst_Clear ]
+{
+"767
+} 0
+"132 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/eusart.c
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+{
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 2 ]
+"139
+} 0
+"38 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/delay.c
+[v _DELAY_milliseconds DELAY_milliseconds `(v  1 e 1 0 ]
+{
+[v DELAY_milliseconds@milliseconds milliseconds `us  1 p 2 2 ]
+"42
+} 0
+"52 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"70
+} 0
+"157 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/tmr1.c
+[v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
+{
+"168
+} 0
+"72 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/mtouch/mtouch.c
+[v _MTOUCH_ScanScheduler MTOUCH_ScanScheduler `(v  1 s 1 MTOUCH_ScanScheduler ]
+{
+"81
+} 0
+"175 /Users/mathrax/MPLABXProjects/1938_mtouch-uart.X/mcc_generated_files/tmr1.c
+[v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"178
+} 0
+"120
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+{
+[v TMR1_WriteTimer@timerVal timerVal `us  1 p 2 0 ]
+"140
+} 0
